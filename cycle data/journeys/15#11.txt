@@ -1,0 +1,14 @@
+# Parameters of hyper-Erlang distribution:
+# number of different Erlang branches, m
+1
+
+# number of phases of i-th Erlang branch, i = 1,...,m
+16
+
+# lambda values of i-th Erlang branch, i = 1,...,m
+4.1558441558441555
+
+# initial probabilities of i-th Erlang branch, i = 1,...,m
+1.0
+
+# Distribution fitted by HyperStar
