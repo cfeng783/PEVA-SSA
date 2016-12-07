@@ -1,0 +1,622 @@
+#params
+param o = 10;
+param d = 1;
+param rb = 0.2;
+param rw = 0.1;
+
+#states
+UserIdle(0,0):= (revoke, 0.0046).UserCall_0_1(0,0)+(revoke, 0.0046).UserCall_0_2(0,0)+(revoke, 0.003312).UserCall_1_0(0,0)+(revoke, 0.002484).UserCall_1_1(0,0)+(revoke, 4.14E-4).UserCall_1_2(0,0)+(revoke, 0.002484).UserCall_2_0(0,0)+(revoke, 9.2E-5).UserCall_2_1(0,0)+(revoke, 0.00161).UserCall_2_2(0,0);
+
+UserIdle(0,1):= (revoke, 0.007995).UserCall_0_0(0,1)+(revoke, 0.0039770000000000005).UserCall_0_2(0,1)+(revoke, 0.005658000000000001).UserCall_1_0(0,1)+(revoke, 0.002706).UserCall_1_1(0,1)+(revoke, 0.008405).UserCall_1_2(0,1)+(revoke, 0.007503).UserCall_2_0(0,1)+(revoke, 0.008159000000000001).UserCall_2_1(0,1)+(revoke, 0.003116).UserCall_2_2(0,1);
+
+UserIdle(0,2):= (revoke, 0.00208).UserCall_0_0(0,2)+(revoke, 0.00183).UserCall_0_1(0,2)+(revoke, 0.0019).UserCall_1_0(0,2)+(revoke, 0.0015300000000000001).UserCall_1_1(0,2)+(revoke, 0.0011899999999999999).UserCall_1_2(0,2)+(revoke, 0.0014299999999999998).UserCall_2_0(0,2)+(revoke, 0.00128).UserCall_2_1(0,2)+(revoke, 0.0016200000000000001).UserCall_2_2(0,2);
+
+UserIdle(1,0):= (revoke, 0.006132).UserCall_0_0(1,0)+(revoke, 0.004536).UserCall_0_1(1,0)+(revoke, 0.004158).UserCall_0_2(1,0)+(revoke, 0.00378).UserCall_1_1(1,0)+(revoke, 0.00861).UserCall_1_2(1,0)+(revoke, 0.008316).UserCall_2_0(1,0)+(revoke, 0.0057540000000000004).UserCall_2_1(1,0)+(revoke, 0.004914000000000001).UserCall_2_2(1,0);
+
+UserIdle(1,1):= (revoke, 0.0032480000000000005).UserCall_0_0(1,1)+(revoke, 0.001072).UserCall_0_1(1,1)+(revoke, 0.002032).UserCall_0_2(1,1)+(revoke, 0.001488).UserCall_1_0(1,1)+(revoke, 0.001312).UserCall_1_2(1,1)+(revoke, 0.0020800000000000003).UserCall_2_0(1,1)+(revoke, 0.001648).UserCall_2_1(1,1)+(revoke, 8.96E-4).UserCall_2_2(1,1);
+
+UserIdle(1,2):= (revoke, 9.6E-5).UserCall_0_0(1,2)+(revoke, 5.12E-4).UserCall_0_1(1,2)+(revoke, 5.92E-4).UserCall_0_2(1,2)+(revoke, 0.002032).UserCall_1_0(1,2)+(revoke, 0.00272).UserCall_1_1(1,2)+(revoke, 0.0022080000000000003).UserCall_2_0(1,2)+(revoke, 0.002512).UserCall_2_1(1,2)+(revoke, 0.00344).UserCall_2_2(1,2);
+
+UserIdle(2,0):= (revoke, 1.54E-4).UserCall_0_0(2,0)+(revoke, 1.7E-4).UserCall_0_1(2,0)+(revoke, 1.1600000000000001E-4).UserCall_0_2(2,0)+(revoke, 1.5E-4).UserCall_1_0(2,0)+(revoke, 2.4E-5).UserCall_1_1(2,0)+(revoke, 1.2900000000000002E-4).UserCall_1_2(2,0)+(revoke, 1.35E-4).UserCall_2_1(2,0)+(revoke, 2.21E-4).UserCall_2_2(2,0);
+
+UserIdle(2,1):= (revoke, 0.00256).UserCall_0_0(2,1)+(revoke, 0.01208).UserCall_0_1(2,1)+(revoke, 0.013200000000000002).UserCall_0_2(2,1)+(revoke, 0.0011200000000000001).UserCall_1_0(2,1)+(revoke, 0.0116).UserCall_1_1(2,1)+(revoke, 0.00928).UserCall_1_2(2,1)+(revoke, 8.0E-4).UserCall_2_0(2,1)+(revoke, 8.0E-4).UserCall_2_2(2,1);
+
+UserIdle(2,2):= (revoke, 7.65E-4).UserCall_0_0(2,2)+(revoke, 0.01598).UserCall_0_1(2,2)+(revoke, 0.013260000000000001).UserCall_0_2(2,2)+(revoke, 0.014705).UserCall_1_0(2,2)+(revoke, 0.00952).UserCall_1_1(2,2)+(revoke, 0.00969).UserCall_1_2(2,2)+(revoke, 0.01581).UserCall_2_0(2,2)+(revoke, 0.009265).UserCall_2_1(2,2);
+
+UserCall_0_1(0,0):=!!(call_0_1, 1.0)@IR{local}.UserWait_0_1(0,0);
+
+UserCall_0_2(0,0):=!!(call_0_2, 1.0)@IR{local}.UserWait_0_2(0,0);
+
+UserCall_1_0(0,0):=!!(call_1_0, 1.0)@IR{local}.UserWait_1_0(0,0);
+
+UserCall_1_1(0,0):=!!(call_1_1, 1.0)@IR{local}.UserWait_1_1(0,0);
+
+UserCall_1_2(0,0):=!!(call_1_2, 1.0)@IR{local}.UserWait_1_2(0,0);
+
+UserCall_2_0(0,0):=!!(call_2_0, 1.0)@IR{local}.UserWait_2_0(0,0);
+
+UserCall_2_1(0,0):=!!(call_2_1, 1.0)@IR{local}.UserWait_2_1(0,0);
+
+UserCall_2_2(0,0):=!!(call_2_2, 1.0)@IR{local}.UserWait_2_2(0,0);
+
+UserCall_0_0(0,1):=!!(call_0_0, 1.0)@IR{local}.UserWait_0_0(0,1);
+
+UserCall_0_2(0,1):=!!(call_0_2, 1.0)@IR{local}.UserWait_0_2(0,1);
+
+UserCall_1_0(0,1):=!!(call_1_0, 1.0)@IR{local}.UserWait_1_0(0,1);
+
+UserCall_1_1(0,1):=!!(call_1_1, 1.0)@IR{local}.UserWait_1_1(0,1);
+
+UserCall_1_2(0,1):=!!(call_1_2, 1.0)@IR{local}.UserWait_1_2(0,1);
+
+UserCall_2_0(0,1):=!!(call_2_0, 1.0)@IR{local}.UserWait_2_0(0,1);
+
+UserCall_2_1(0,1):=!!(call_2_1, 1.0)@IR{local}.UserWait_2_1(0,1);
+
+UserCall_2_2(0,1):=!!(call_2_2, 1.0)@IR{local}.UserWait_2_2(0,1);
+
+UserCall_0_0(0,2):=!!(call_0_0, 1.0)@IR{local}.UserWait_0_0(0,2);
+
+UserCall_0_1(0,2):=!!(call_0_1, 1.0)@IR{local}.UserWait_0_1(0,2);
+
+UserCall_1_0(0,2):=!!(call_1_0, 1.0)@IR{local}.UserWait_1_0(0,2);
+
+UserCall_1_1(0,2):=!!(call_1_1, 1.0)@IR{local}.UserWait_1_1(0,2);
+
+UserCall_1_2(0,2):=!!(call_1_2, 1.0)@IR{local}.UserWait_1_2(0,2);
+
+UserCall_2_0(0,2):=!!(call_2_0, 1.0)@IR{local}.UserWait_2_0(0,2);
+
+UserCall_2_1(0,2):=!!(call_2_1, 1.0)@IR{local}.UserWait_2_1(0,2);
+
+UserCall_2_2(0,2):=!!(call_2_2, 1.0)@IR{local}.UserWait_2_2(0,2);
+
+UserCall_0_0(1,0):=!!(call_0_0, 1.0)@IR{local}.UserWait_0_0(1,0);
+
+UserCall_0_1(1,0):=!!(call_0_1, 1.0)@IR{local}.UserWait_0_1(1,0);
+
+UserCall_0_2(1,0):=!!(call_0_2, 1.0)@IR{local}.UserWait_0_2(1,0);
+
+UserCall_1_1(1,0):=!!(call_1_1, 1.0)@IR{local}.UserWait_1_1(1,0);
+
+UserCall_1_2(1,0):=!!(call_1_2, 1.0)@IR{local}.UserWait_1_2(1,0);
+
+UserCall_2_0(1,0):=!!(call_2_0, 1.0)@IR{local}.UserWait_2_0(1,0);
+
+UserCall_2_1(1,0):=!!(call_2_1, 1.0)@IR{local}.UserWait_2_1(1,0);
+
+UserCall_2_2(1,0):=!!(call_2_2, 1.0)@IR{local}.UserWait_2_2(1,0);
+
+UserCall_0_0(1,1):=!!(call_0_0, 1.0)@IR{local}.UserWait_0_0(1,1);
+
+UserCall_0_1(1,1):=!!(call_0_1, 1.0)@IR{local}.UserWait_0_1(1,1);
+
+UserCall_0_2(1,1):=!!(call_0_2, 1.0)@IR{local}.UserWait_0_2(1,1);
+
+UserCall_1_0(1,1):=!!(call_1_0, 1.0)@IR{local}.UserWait_1_0(1,1);
+
+UserCall_1_2(1,1):=!!(call_1_2, 1.0)@IR{local}.UserWait_1_2(1,1);
+
+UserCall_2_0(1,1):=!!(call_2_0, 1.0)@IR{local}.UserWait_2_0(1,1);
+
+UserCall_2_1(1,1):=!!(call_2_1, 1.0)@IR{local}.UserWait_2_1(1,1);
+
+UserCall_2_2(1,1):=!!(call_2_2, 1.0)@IR{local}.UserWait_2_2(1,1);
+
+UserCall_0_0(1,2):=!!(call_0_0, 1.0)@IR{local}.UserWait_0_0(1,2);
+
+UserCall_0_1(1,2):=!!(call_0_1, 1.0)@IR{local}.UserWait_0_1(1,2);
+
+UserCall_0_2(1,2):=!!(call_0_2, 1.0)@IR{local}.UserWait_0_2(1,2);
+
+UserCall_1_0(1,2):=!!(call_1_0, 1.0)@IR{local}.UserWait_1_0(1,2);
+
+UserCall_1_1(1,2):=!!(call_1_1, 1.0)@IR{local}.UserWait_1_1(1,2);
+
+UserCall_2_0(1,2):=!!(call_2_0, 1.0)@IR{local}.UserWait_2_0(1,2);
+
+UserCall_2_1(1,2):=!!(call_2_1, 1.0)@IR{local}.UserWait_2_1(1,2);
+
+UserCall_2_2(1,2):=!!(call_2_2, 1.0)@IR{local}.UserWait_2_2(1,2);
+
+UserCall_0_0(2,0):=!!(call_0_0, 1.0)@IR{local}.UserWait_0_0(2,0);
+
+UserCall_0_1(2,0):=!!(call_0_1, 1.0)@IR{local}.UserWait_0_1(2,0);
+
+UserCall_0_2(2,0):=!!(call_0_2, 1.0)@IR{local}.UserWait_0_2(2,0);
+
+UserCall_1_0(2,0):=!!(call_1_0, 1.0)@IR{local}.UserWait_1_0(2,0);
+
+UserCall_1_1(2,0):=!!(call_1_1, 1.0)@IR{local}.UserWait_1_1(2,0);
+
+UserCall_1_2(2,0):=!!(call_1_2, 1.0)@IR{local}.UserWait_1_2(2,0);
+
+UserCall_2_1(2,0):=!!(call_2_1, 1.0)@IR{local}.UserWait_2_1(2,0);
+
+UserCall_2_2(2,0):=!!(call_2_2, 1.0)@IR{local}.UserWait_2_2(2,0);
+
+UserCall_0_0(2,1):=!!(call_0_0, 1.0)@IR{local}.UserWait_0_0(2,1);
+
+UserCall_0_1(2,1):=!!(call_0_1, 1.0)@IR{local}.UserWait_0_1(2,1);
+
+UserCall_0_2(2,1):=!!(call_0_2, 1.0)@IR{local}.UserWait_0_2(2,1);
+
+UserCall_1_0(2,1):=!!(call_1_0, 1.0)@IR{local}.UserWait_1_0(2,1);
+
+UserCall_1_1(2,1):=!!(call_1_1, 1.0)@IR{local}.UserWait_1_1(2,1);
+
+UserCall_1_2(2,1):=!!(call_1_2, 1.0)@IR{local}.UserWait_1_2(2,1);
+
+UserCall_2_0(2,1):=!!(call_2_0, 1.0)@IR{local}.UserWait_2_0(2,1);
+
+UserCall_2_2(2,1):=!!(call_2_2, 1.0)@IR{local}.UserWait_2_2(2,1);
+
+UserCall_0_0(2,2):=!!(call_0_0, 1.0)@IR{local}.UserWait_0_0(2,2);
+
+UserCall_0_1(2,2):=!!(call_0_1, 1.0)@IR{local}.UserWait_0_1(2,2);
+
+UserCall_0_2(2,2):=!!(call_0_2, 1.0)@IR{local}.UserWait_0_2(2,2);
+
+UserCall_1_0(2,2):=!!(call_1_0, 1.0)@IR{local}.UserWait_1_0(2,2);
+
+UserCall_1_1(2,2):=!!(call_1_1, 1.0)@IR{local}.UserWait_1_1(2,2);
+
+UserCall_1_2(2,2):=!!(call_1_2, 1.0)@IR{local}.UserWait_1_2(2,2);
+
+UserCall_2_0(2,2):=!!(call_2_0, 1.0)@IR{local}.UserWait_2_0(2,2);
+
+UserCall_2_1(2,2):=!!(call_2_1, 1.0)@IR{local}.UserWait_2_1(2,2);
+
+UserWait_0_1(0,0):=??(take_0_1, 1)@Wt{1}.UserIdle(0,0);
+
+UserWait_0_2(0,0):=??(take_0_2, 1)@Wt{1}.UserIdle(0,0);
+
+UserWait_1_0(0,0):=??(take_1_0, 1)@Wt{1}.UserIdle(0,0);
+
+UserWait_1_1(0,0):=??(take_1_1, 1)@Wt{1}.UserIdle(0,0);
+
+UserWait_1_2(0,0):=??(take_1_2, 1)@Wt{1}.UserIdle(0,0);
+
+UserWait_2_0(0,0):=??(take_2_0, 1)@Wt{1}.UserIdle(0,0);
+
+UserWait_2_1(0,0):=??(take_2_1, 1)@Wt{1}.UserIdle(0,0);
+
+UserWait_2_2(0,0):=??(take_2_2, 1)@Wt{1}.UserIdle(0,0);
+
+UserWait_0_0(0,1):=??(take_0_0, 1)@Wt{1}.UserIdle(0,1);
+
+UserWait_0_2(0,1):=??(take_0_2, 1)@Wt{1}.UserIdle(0,1);
+
+UserWait_1_0(0,1):=??(take_1_0, 1)@Wt{1}.UserIdle(0,1);
+
+UserWait_1_1(0,1):=??(take_1_1, 1)@Wt{1}.UserIdle(0,1);
+
+UserWait_1_2(0,1):=??(take_1_2, 1)@Wt{1}.UserIdle(0,1);
+
+UserWait_2_0(0,1):=??(take_2_0, 1)@Wt{1}.UserIdle(0,1);
+
+UserWait_2_1(0,1):=??(take_2_1, 1)@Wt{1}.UserIdle(0,1);
+
+UserWait_2_2(0,1):=??(take_2_2, 1)@Wt{1}.UserIdle(0,1);
+
+UserWait_0_0(0,2):=??(take_0_0, 1)@Wt{1}.UserIdle(0,2);
+
+UserWait_0_1(0,2):=??(take_0_1, 1)@Wt{1}.UserIdle(0,2);
+
+UserWait_1_0(0,2):=??(take_1_0, 1)@Wt{1}.UserIdle(0,2);
+
+UserWait_1_1(0,2):=??(take_1_1, 1)@Wt{1}.UserIdle(0,2);
+
+UserWait_1_2(0,2):=??(take_1_2, 1)@Wt{1}.UserIdle(0,2);
+
+UserWait_2_0(0,2):=??(take_2_0, 1)@Wt{1}.UserIdle(0,2);
+
+UserWait_2_1(0,2):=??(take_2_1, 1)@Wt{1}.UserIdle(0,2);
+
+UserWait_2_2(0,2):=??(take_2_2, 1)@Wt{1}.UserIdle(0,2);
+
+UserWait_0_0(1,0):=??(take_0_0, 1)@Wt{1}.UserIdle(1,0);
+
+UserWait_0_1(1,0):=??(take_0_1, 1)@Wt{1}.UserIdle(1,0);
+
+UserWait_0_2(1,0):=??(take_0_2, 1)@Wt{1}.UserIdle(1,0);
+
+UserWait_1_1(1,0):=??(take_1_1, 1)@Wt{1}.UserIdle(1,0);
+
+UserWait_1_2(1,0):=??(take_1_2, 1)@Wt{1}.UserIdle(1,0);
+
+UserWait_2_0(1,0):=??(take_2_0, 1)@Wt{1}.UserIdle(1,0);
+
+UserWait_2_1(1,0):=??(take_2_1, 1)@Wt{1}.UserIdle(1,0);
+
+UserWait_2_2(1,0):=??(take_2_2, 1)@Wt{1}.UserIdle(1,0);
+
+UserWait_0_0(1,1):=??(take_0_0, 1)@Wt{1}.UserIdle(1,1);
+
+UserWait_0_1(1,1):=??(take_0_1, 1)@Wt{1}.UserIdle(1,1);
+
+UserWait_0_2(1,1):=??(take_0_2, 1)@Wt{1}.UserIdle(1,1);
+
+UserWait_1_0(1,1):=??(take_1_0, 1)@Wt{1}.UserIdle(1,1);
+
+UserWait_1_2(1,1):=??(take_1_2, 1)@Wt{1}.UserIdle(1,1);
+
+UserWait_2_0(1,1):=??(take_2_0, 1)@Wt{1}.UserIdle(1,1);
+
+UserWait_2_1(1,1):=??(take_2_1, 1)@Wt{1}.UserIdle(1,1);
+
+UserWait_2_2(1,1):=??(take_2_2, 1)@Wt{1}.UserIdle(1,1);
+
+UserWait_0_0(1,2):=??(take_0_0, 1)@Wt{1}.UserIdle(1,2);
+
+UserWait_0_1(1,2):=??(take_0_1, 1)@Wt{1}.UserIdle(1,2);
+
+UserWait_0_2(1,2):=??(take_0_2, 1)@Wt{1}.UserIdle(1,2);
+
+UserWait_1_0(1,2):=??(take_1_0, 1)@Wt{1}.UserIdle(1,2);
+
+UserWait_1_1(1,2):=??(take_1_1, 1)@Wt{1}.UserIdle(1,2);
+
+UserWait_2_0(1,2):=??(take_2_0, 1)@Wt{1}.UserIdle(1,2);
+
+UserWait_2_1(1,2):=??(take_2_1, 1)@Wt{1}.UserIdle(1,2);
+
+UserWait_2_2(1,2):=??(take_2_2, 1)@Wt{1}.UserIdle(1,2);
+
+UserWait_0_0(2,0):=??(take_0_0, 1)@Wt{1}.UserIdle(2,0);
+
+UserWait_0_1(2,0):=??(take_0_1, 1)@Wt{1}.UserIdle(2,0);
+
+UserWait_0_2(2,0):=??(take_0_2, 1)@Wt{1}.UserIdle(2,0);
+
+UserWait_1_0(2,0):=??(take_1_0, 1)@Wt{1}.UserIdle(2,0);
+
+UserWait_1_1(2,0):=??(take_1_1, 1)@Wt{1}.UserIdle(2,0);
+
+UserWait_1_2(2,0):=??(take_1_2, 1)@Wt{1}.UserIdle(2,0);
+
+UserWait_2_1(2,0):=??(take_2_1, 1)@Wt{1}.UserIdle(2,0);
+
+UserWait_2_2(2,0):=??(take_2_2, 1)@Wt{1}.UserIdle(2,0);
+
+UserWait_0_0(2,1):=??(take_0_0, 1)@Wt{1}.UserIdle(2,1);
+
+UserWait_0_1(2,1):=??(take_0_1, 1)@Wt{1}.UserIdle(2,1);
+
+UserWait_0_2(2,1):=??(take_0_2, 1)@Wt{1}.UserIdle(2,1);
+
+UserWait_1_0(2,1):=??(take_1_0, 1)@Wt{1}.UserIdle(2,1);
+
+UserWait_1_1(2,1):=??(take_1_1, 1)@Wt{1}.UserIdle(2,1);
+
+UserWait_1_2(2,1):=??(take_1_2, 1)@Wt{1}.UserIdle(2,1);
+
+UserWait_2_0(2,1):=??(take_2_0, 1)@Wt{1}.UserIdle(2,1);
+
+UserWait_2_2(2,1):=??(take_2_2, 1)@Wt{1}.UserIdle(2,1);
+
+UserWait_0_0(2,2):=??(take_0_0, 1)@Wt{1}.UserIdle(2,2);
+
+UserWait_0_1(2,2):=??(take_0_1, 1)@Wt{1}.UserIdle(2,2);
+
+UserWait_0_2(2,2):=??(take_0_2, 1)@Wt{1}.UserIdle(2,2);
+
+UserWait_1_0(2,2):=??(take_1_0, 1)@Wt{1}.UserIdle(2,2);
+
+UserWait_1_1(2,2):=??(take_1_1, 1)@Wt{1}.UserIdle(2,2);
+
+UserWait_1_2(2,2):=??(take_1_2, 1)@Wt{1}.UserIdle(2,2);
+
+UserWait_2_0(2,2):=??(take_2_0, 1)@Wt{1}.UserIdle(2,2);
+
+UserWait_2_1(2,2):=??(take_2_1, 1)@Wt{1}.UserIdle(2,2);
+
+TaxiFree(0,0):= ??(call_0_1, 1)@Wt{1}.TaxiBooked_0_1(0,0)+(move, 0.01).TaxiFree(0,1)+??(call_0_2, 1)@Wt{1}.TaxiBooked_0_2(0,0)+??(call_1_0, 1)@Wt{1}.TaxiBooked_1_0(0,0)+(move, 0.082).TaxiFree(1,0)+??(call_1_1, 1)@Wt{1}.TaxiBooked_1_1(0,0)+??(call_1_2, 1)@Wt{1}.TaxiBooked_1_2(0,0)+??(call_2_0, 1)@Wt{1}.TaxiBooked_2_0(0,0)+??(call_2_1, 1)@Wt{1}.TaxiBooked_2_1(0,0)+??(call_2_2, 1)@Wt{1}.TaxiBooked_2_2(0,0);
+
+TaxiFree(0,1):= ??(call_0_0, 1)@Wt{1}.TaxiBooked_0_0(0,1)+(move, 0.099).TaxiFree(0,0)+??(call_0_2, 1)@Wt{1}.TaxiBooked_0_2(0,1)+(move, 0.091).TaxiFree(0,2)+??(call_1_0, 1)@Wt{1}.TaxiBooked_1_0(0,1)+??(call_1_1, 1)@Wt{1}.TaxiBooked_1_1(0,1)+(move, 0.049).TaxiFree(1,1)+??(call_1_2, 1)@Wt{1}.TaxiBooked_1_2(0,1)+??(call_2_0, 1)@Wt{1}.TaxiBooked_2_0(0,1)+??(call_2_1, 1)@Wt{1}.TaxiBooked_2_1(0,1)+??(call_2_2, 1)@Wt{1}.TaxiBooked_2_2(0,1);
+
+TaxiFree(0,2):= ??(call_0_0, 1)@Wt{1}.TaxiBooked_0_0(0,2)+??(call_0_1, 1)@Wt{1}.TaxiBooked_0_1(0,2)+(move, 0.074).TaxiFree(0,1)+??(call_1_0, 1)@Wt{1}.TaxiBooked_1_0(0,2)+??(call_1_1, 1)@Wt{1}.TaxiBooked_1_1(0,2)+??(call_1_2, 1)@Wt{1}.TaxiBooked_1_2(0,2)+(move, 0.004).TaxiFree(1,2)+??(call_2_0, 1)@Wt{1}.TaxiBooked_2_0(0,2)+??(call_2_1, 1)@Wt{1}.TaxiBooked_2_1(0,2)+??(call_2_2, 1)@Wt{1}.TaxiBooked_2_2(0,2);
+
+TaxiFree(1,0):= ??(call_0_0, 1)@Wt{1}.TaxiBooked_0_0(1,0)+(move, 0.07).TaxiFree(0,0)+??(call_0_1, 1)@Wt{1}.TaxiBooked_0_1(1,0)+??(call_0_2, 1)@Wt{1}.TaxiBooked_0_2(1,0)+??(call_1_1, 1)@Wt{1}.TaxiBooked_1_1(1,0)+(move, 0.029).TaxiFree(1,1)+??(call_1_2, 1)@Wt{1}.TaxiBooked_1_2(1,0)+??(call_2_0, 1)@Wt{1}.TaxiBooked_2_0(1,0)+(move, 0.076).TaxiFree(2,0)+??(call_2_1, 1)@Wt{1}.TaxiBooked_2_1(1,0)+??(call_2_2, 1)@Wt{1}.TaxiBooked_2_2(1,0);
+
+TaxiFree(1,1):= ??(call_0_0, 1)@Wt{1}.TaxiBooked_0_0(1,1)+??(call_0_1, 1)@Wt{1}.TaxiBooked_0_1(1,1)+(move, 0.011).TaxiFree(0,1)+??(call_0_2, 1)@Wt{1}.TaxiBooked_0_2(1,1)+??(call_1_0, 1)@Wt{1}.TaxiBooked_1_0(1,1)+(move, 0.088).TaxiFree(1,0)+??(call_1_2, 1)@Wt{1}.TaxiBooked_1_2(1,1)+(move, 0.081).TaxiFree(1,2)+??(call_2_0, 1)@Wt{1}.TaxiBooked_2_0(1,1)+??(call_2_1, 1)@Wt{1}.TaxiBooked_2_1(1,1)+(move, 0.038).TaxiFree(2,1)+??(call_2_2, 1)@Wt{1}.TaxiBooked_2_2(1,1);
+
+TaxiFree(1,2):= ??(call_0_0, 1)@Wt{1}.TaxiBooked_0_0(1,2)+??(call_0_1, 1)@Wt{1}.TaxiBooked_0_1(1,2)+??(call_0_2, 1)@Wt{1}.TaxiBooked_0_2(1,2)+(move, 0.059).TaxiFree(0,2)+??(call_1_0, 1)@Wt{1}.TaxiBooked_1_0(1,2)+??(call_1_1, 1)@Wt{1}.TaxiBooked_1_1(1,2)+(move, 0.022).TaxiFree(1,1)+??(call_2_0, 1)@Wt{1}.TaxiBooked_2_0(1,2)+??(call_2_1, 1)@Wt{1}.TaxiBooked_2_1(1,2)+??(call_2_2, 1)@Wt{1}.TaxiBooked_2_2(1,2)+(move, 0.037).TaxiFree(2,2);
+
+TaxiFree(2,0):= ??(call_0_0, 1)@Wt{1}.TaxiBooked_0_0(2,0)+??(call_0_1, 1)@Wt{1}.TaxiBooked_0_1(2,0)+??(call_0_2, 1)@Wt{1}.TaxiBooked_0_2(2,0)+??(call_1_0, 1)@Wt{1}.TaxiBooked_1_0(2,0)+(move, 0.012).TaxiFree(1,0)+??(call_1_1, 1)@Wt{1}.TaxiBooked_1_1(2,0)+??(call_1_2, 1)@Wt{1}.TaxiBooked_1_2(2,0)+??(call_2_1, 1)@Wt{1}.TaxiBooked_2_1(2,0)+(move, 0.043).TaxiFree(2,1)+??(call_2_2, 1)@Wt{1}.TaxiBooked_2_2(2,0);
+
+TaxiFree(2,1):= ??(call_0_0, 1)@Wt{1}.TaxiBooked_0_0(2,1)+??(call_0_1, 1)@Wt{1}.TaxiBooked_0_1(2,1)+??(call_0_2, 1)@Wt{1}.TaxiBooked_0_2(2,1)+??(call_1_0, 1)@Wt{1}.TaxiBooked_1_0(2,1)+??(call_1_1, 1)@Wt{1}.TaxiBooked_1_1(2,1)+(move, 0.036).TaxiFree(1,1)+??(call_1_2, 1)@Wt{1}.TaxiBooked_1_2(2,1)+??(call_2_0, 1)@Wt{1}.TaxiBooked_2_0(2,1)+(move, 0.076).TaxiFree(2,0)+??(call_2_2, 1)@Wt{1}.TaxiBooked_2_2(2,1)+(move, 0.039).TaxiFree(2,2);
+
+TaxiFree(2,2):= ??(call_0_0, 1)@Wt{1}.TaxiBooked_0_0(2,2)+??(call_0_1, 1)@Wt{1}.TaxiBooked_0_1(2,2)+??(call_0_2, 1)@Wt{1}.TaxiBooked_0_2(2,2)+??(call_1_0, 1)@Wt{1}.TaxiBooked_1_0(2,2)+??(call_1_1, 1)@Wt{1}.TaxiBooked_1_1(2,2)+??(call_1_2, 1)@Wt{1}.TaxiBooked_1_2(2,2)+(move, 0.063).TaxiFree(1,2)+??(call_2_0, 1)@Wt{1}.TaxiBooked_2_0(2,2)+??(call_2_1, 1)@Wt{1}.TaxiBooked_2_1(2,2)+(move, 0.006).TaxiFree(2,1);
+
+TaxiBooked_0_1(0,0):=!!(take_0_1, 1.0)@IR{local}.TaxiOccupied_0_1(0,0);
+
+TaxiBooked_0_2(0,0):=!!(take_0_2, 1.0)@IR{local}.TaxiOccupied_0_2(0,0);
+
+TaxiBooked_1_0(0,0):=!!(take_1_0, 1.0)@IR{local}.TaxiOccupied_1_0(0,0);
+
+TaxiBooked_1_1(0,0):=!!(take_1_1, 1.0)@IR{local}.TaxiOccupied_1_1(0,0);
+
+TaxiBooked_1_2(0,0):=!!(take_1_2, 1.0)@IR{local}.TaxiOccupied_1_2(0,0);
+
+TaxiBooked_2_0(0,0):=!!(take_2_0, 1.0)@IR{local}.TaxiOccupied_2_0(0,0);
+
+TaxiBooked_2_1(0,0):=!!(take_2_1, 1.0)@IR{local}.TaxiOccupied_2_1(0,0);
+
+TaxiBooked_2_2(0,0):=!!(take_2_2, 1.0)@IR{local}.TaxiOccupied_2_2(0,0);
+
+TaxiBooked_0_0(0,1):=!!(take_0_0, 1.0)@IR{local}.TaxiOccupied_0_0(0,1);
+
+TaxiBooked_0_2(0,1):=!!(take_0_2, 1.0)@IR{local}.TaxiOccupied_0_2(0,1);
+
+TaxiBooked_1_0(0,1):=!!(take_1_0, 1.0)@IR{local}.TaxiOccupied_1_0(0,1);
+
+TaxiBooked_1_1(0,1):=!!(take_1_1, 1.0)@IR{local}.TaxiOccupied_1_1(0,1);
+
+TaxiBooked_1_2(0,1):=!!(take_1_2, 1.0)@IR{local}.TaxiOccupied_1_2(0,1);
+
+TaxiBooked_2_0(0,1):=!!(take_2_0, 1.0)@IR{local}.TaxiOccupied_2_0(0,1);
+
+TaxiBooked_2_1(0,1):=!!(take_2_1, 1.0)@IR{local}.TaxiOccupied_2_1(0,1);
+
+TaxiBooked_2_2(0,1):=!!(take_2_2, 1.0)@IR{local}.TaxiOccupied_2_2(0,1);
+
+TaxiBooked_0_0(0,2):=!!(take_0_0, 1.0)@IR{local}.TaxiOccupied_0_0(0,2);
+
+TaxiBooked_0_1(0,2):=!!(take_0_1, 1.0)@IR{local}.TaxiOccupied_0_1(0,2);
+
+TaxiBooked_1_0(0,2):=!!(take_1_0, 1.0)@IR{local}.TaxiOccupied_1_0(0,2);
+
+TaxiBooked_1_1(0,2):=!!(take_1_1, 1.0)@IR{local}.TaxiOccupied_1_1(0,2);
+
+TaxiBooked_1_2(0,2):=!!(take_1_2, 1.0)@IR{local}.TaxiOccupied_1_2(0,2);
+
+TaxiBooked_2_0(0,2):=!!(take_2_0, 1.0)@IR{local}.TaxiOccupied_2_0(0,2);
+
+TaxiBooked_2_1(0,2):=!!(take_2_1, 1.0)@IR{local}.TaxiOccupied_2_1(0,2);
+
+TaxiBooked_2_2(0,2):=!!(take_2_2, 1.0)@IR{local}.TaxiOccupied_2_2(0,2);
+
+TaxiBooked_0_0(1,0):=!!(take_0_0, 1.0)@IR{local}.TaxiOccupied_0_0(1,0);
+
+TaxiBooked_0_1(1,0):=!!(take_0_1, 1.0)@IR{local}.TaxiOccupied_0_1(1,0);
+
+TaxiBooked_0_2(1,0):=!!(take_0_2, 1.0)@IR{local}.TaxiOccupied_0_2(1,0);
+
+TaxiBooked_1_1(1,0):=!!(take_1_1, 1.0)@IR{local}.TaxiOccupied_1_1(1,0);
+
+TaxiBooked_1_2(1,0):=!!(take_1_2, 1.0)@IR{local}.TaxiOccupied_1_2(1,0);
+
+TaxiBooked_2_0(1,0):=!!(take_2_0, 1.0)@IR{local}.TaxiOccupied_2_0(1,0);
+
+TaxiBooked_2_1(1,0):=!!(take_2_1, 1.0)@IR{local}.TaxiOccupied_2_1(1,0);
+
+TaxiBooked_2_2(1,0):=!!(take_2_2, 1.0)@IR{local}.TaxiOccupied_2_2(1,0);
+
+TaxiBooked_0_0(1,1):=!!(take_0_0, 1.0)@IR{local}.TaxiOccupied_0_0(1,1);
+
+TaxiBooked_0_1(1,1):=!!(take_0_1, 1.0)@IR{local}.TaxiOccupied_0_1(1,1);
+
+TaxiBooked_0_2(1,1):=!!(take_0_2, 1.0)@IR{local}.TaxiOccupied_0_2(1,1);
+
+TaxiBooked_1_0(1,1):=!!(take_1_0, 1.0)@IR{local}.TaxiOccupied_1_0(1,1);
+
+TaxiBooked_1_2(1,1):=!!(take_1_2, 1.0)@IR{local}.TaxiOccupied_1_2(1,1);
+
+TaxiBooked_2_0(1,1):=!!(take_2_0, 1.0)@IR{local}.TaxiOccupied_2_0(1,1);
+
+TaxiBooked_2_1(1,1):=!!(take_2_1, 1.0)@IR{local}.TaxiOccupied_2_1(1,1);
+
+TaxiBooked_2_2(1,1):=!!(take_2_2, 1.0)@IR{local}.TaxiOccupied_2_2(1,1);
+
+TaxiBooked_0_0(1,2):=!!(take_0_0, 1.0)@IR{local}.TaxiOccupied_0_0(1,2);
+
+TaxiBooked_0_1(1,2):=!!(take_0_1, 1.0)@IR{local}.TaxiOccupied_0_1(1,2);
+
+TaxiBooked_0_2(1,2):=!!(take_0_2, 1.0)@IR{local}.TaxiOccupied_0_2(1,2);
+
+TaxiBooked_1_0(1,2):=!!(take_1_0, 1.0)@IR{local}.TaxiOccupied_1_0(1,2);
+
+TaxiBooked_1_1(1,2):=!!(take_1_1, 1.0)@IR{local}.TaxiOccupied_1_1(1,2);
+
+TaxiBooked_2_0(1,2):=!!(take_2_0, 1.0)@IR{local}.TaxiOccupied_2_0(1,2);
+
+TaxiBooked_2_1(1,2):=!!(take_2_1, 1.0)@IR{local}.TaxiOccupied_2_1(1,2);
+
+TaxiBooked_2_2(1,2):=!!(take_2_2, 1.0)@IR{local}.TaxiOccupied_2_2(1,2);
+
+TaxiBooked_0_0(2,0):=!!(take_0_0, 1.0)@IR{local}.TaxiOccupied_0_0(2,0);
+
+TaxiBooked_0_1(2,0):=!!(take_0_1, 1.0)@IR{local}.TaxiOccupied_0_1(2,0);
+
+TaxiBooked_0_2(2,0):=!!(take_0_2, 1.0)@IR{local}.TaxiOccupied_0_2(2,0);
+
+TaxiBooked_1_0(2,0):=!!(take_1_0, 1.0)@IR{local}.TaxiOccupied_1_0(2,0);
+
+TaxiBooked_1_1(2,0):=!!(take_1_1, 1.0)@IR{local}.TaxiOccupied_1_1(2,0);
+
+TaxiBooked_1_2(2,0):=!!(take_1_2, 1.0)@IR{local}.TaxiOccupied_1_2(2,0);
+
+TaxiBooked_2_1(2,0):=!!(take_2_1, 1.0)@IR{local}.TaxiOccupied_2_1(2,0);
+
+TaxiBooked_2_2(2,0):=!!(take_2_2, 1.0)@IR{local}.TaxiOccupied_2_2(2,0);
+
+TaxiBooked_0_0(2,1):=!!(take_0_0, 1.0)@IR{local}.TaxiOccupied_0_0(2,1);
+
+TaxiBooked_0_1(2,1):=!!(take_0_1, 1.0)@IR{local}.TaxiOccupied_0_1(2,1);
+
+TaxiBooked_0_2(2,1):=!!(take_0_2, 1.0)@IR{local}.TaxiOccupied_0_2(2,1);
+
+TaxiBooked_1_0(2,1):=!!(take_1_0, 1.0)@IR{local}.TaxiOccupied_1_0(2,1);
+
+TaxiBooked_1_1(2,1):=!!(take_1_1, 1.0)@IR{local}.TaxiOccupied_1_1(2,1);
+
+TaxiBooked_1_2(2,1):=!!(take_1_2, 1.0)@IR{local}.TaxiOccupied_1_2(2,1);
+
+TaxiBooked_2_0(2,1):=!!(take_2_0, 1.0)@IR{local}.TaxiOccupied_2_0(2,1);
+
+TaxiBooked_2_2(2,1):=!!(take_2_2, 1.0)@IR{local}.TaxiOccupied_2_2(2,1);
+
+TaxiBooked_0_0(2,2):=!!(take_0_0, 1.0)@IR{local}.TaxiOccupied_0_0(2,2);
+
+TaxiBooked_0_1(2,2):=!!(take_0_1, 1.0)@IR{local}.TaxiOccupied_0_1(2,2);
+
+TaxiBooked_0_2(2,2):=!!(take_0_2, 1.0)@IR{local}.TaxiOccupied_0_2(2,2);
+
+TaxiBooked_1_0(2,2):=!!(take_1_0, 1.0)@IR{local}.TaxiOccupied_1_0(2,2);
+
+TaxiBooked_1_1(2,2):=!!(take_1_1, 1.0)@IR{local}.TaxiOccupied_1_1(2,2);
+
+TaxiBooked_1_2(2,2):=!!(take_1_2, 1.0)@IR{local}.TaxiOccupied_1_2(2,2);
+
+TaxiBooked_2_0(2,2):=!!(take_2_0, 1.0)@IR{local}.TaxiOccupied_2_0(2,2);
+
+TaxiBooked_2_1(2,2):=!!(take_2_1, 1.0)@IR{local}.TaxiOccupied_2_1(2,2);
+
+TaxiOccupied_0_1(0,0):=(deliver, 0.095).TaxiFree(0,1);
+
+TaxiOccupied_0_2(0,0):=(deliver, 0.071).TaxiFree(0,2);
+
+TaxiOccupied_1_0(0,0):=(deliver, 0.043).TaxiFree(1,0);
+
+TaxiOccupied_1_1(0,0):=(deliver, 0.09).TaxiFree(1,1);
+
+TaxiOccupied_1_2(0,0):=(deliver, 0.041).TaxiFree(1,2);
+
+TaxiOccupied_2_0(0,0):=(deliver, 0.059).TaxiFree(2,0);
+
+TaxiOccupied_2_1(0,0):=(deliver, 0.078).TaxiFree(2,1);
+
+TaxiOccupied_2_2(0,0):=(deliver, 0.004).TaxiFree(2,2);
+
+TaxiOccupied_0_0(0,1):=(deliver, 0.061).TaxiFree(0,0);
+
+TaxiOccupied_0_2(0,1):=(deliver, 0.042).TaxiFree(0,2);
+
+TaxiOccupied_1_0(0,1):=(deliver, 0.072).TaxiFree(1,0);
+
+TaxiOccupied_1_1(0,1):=(deliver, 0.039).TaxiFree(1,1);
+
+TaxiOccupied_1_2(0,1):=(deliver, 0.007).TaxiFree(1,2);
+
+TaxiOccupied_2_0(0,1):=(deliver, 0.087).TaxiFree(2,0);
+
+TaxiOccupied_2_1(0,1):=(deliver, 0.026).TaxiFree(2,1);
+
+TaxiOccupied_2_2(0,1):=(deliver, 0.023).TaxiFree(2,2);
+
+TaxiOccupied_0_0(0,2):=(deliver, 0.09).TaxiFree(0,0);
+
+TaxiOccupied_0_1(0,2):=(deliver, 0.028).TaxiFree(0,1);
+
+TaxiOccupied_1_0(0,2):=(deliver, 0.099).TaxiFree(1,0);
+
+TaxiOccupied_1_1(0,2):=(deliver, 0.084).TaxiFree(1,1);
+
+TaxiOccupied_1_2(0,2):=(deliver, 0.09).TaxiFree(1,2);
+
+TaxiOccupied_2_0(0,2):=(deliver, 0.062).TaxiFree(2,0);
+
+TaxiOccupied_2_1(0,2):=(deliver, 0.07).TaxiFree(2,1);
+
+TaxiOccupied_2_2(0,2):=(deliver, 0.055).TaxiFree(2,2);
+
+TaxiOccupied_0_0(1,0):=(deliver, 0.006).TaxiFree(0,0);
+
+TaxiOccupied_0_1(1,0):=(deliver, 0.095).TaxiFree(0,1);
+
+TaxiOccupied_0_2(1,0):=(deliver, 0.037).TaxiFree(0,2);
+
+TaxiOccupied_1_1(1,0):=(deliver, 0.097).TaxiFree(1,1);
+
+TaxiOccupied_1_2(1,0):=(deliver, 0.046).TaxiFree(1,2);
+
+TaxiOccupied_2_0(1,0):=(deliver, 0.058).TaxiFree(2,0);
+
+TaxiOccupied_2_1(1,0):=(deliver, 0.016).TaxiFree(2,1);
+
+TaxiOccupied_2_2(1,0):=(deliver, 0.022).TaxiFree(2,2);
+
+TaxiOccupied_0_0(1,1):=(deliver, 0.044).TaxiFree(0,0);
+
+TaxiOccupied_0_1(1,1):=(deliver, 0.09).TaxiFree(0,1);
+
+TaxiOccupied_0_2(1,1):=(deliver, 0.003).TaxiFree(0,2);
+
+TaxiOccupied_1_0(1,1):=(deliver, 0.073).TaxiFree(1,0);
+
+TaxiOccupied_1_2(1,1):=(deliver, 0.009).TaxiFree(1,2);
+
+TaxiOccupied_2_0(1,1):=(deliver, 0.056).TaxiFree(2,0);
+
+TaxiOccupied_2_1(1,1):=(deliver, 0.069).TaxiFree(2,1);
+
+TaxiOccupied_2_2(1,1):=(deliver, 0.051).TaxiFree(2,2);
+
+TaxiOccupied_0_0(1,2):=(deliver, 0.064).TaxiFree(0,0);
+
+TaxiOccupied_0_1(1,2):=(deliver, 0.054).TaxiFree(0,1);
+
+TaxiOccupied_0_2(1,2):=(deliver, 0.089).TaxiFree(0,2);
+
+TaxiOccupied_1_0(1,2):=(deliver, 0.055).TaxiFree(1,0);
+
+TaxiOccupied_1_1(1,2):=(deliver, 0.005).TaxiFree(1,1);
+
+TaxiOccupied_2_0(1,2):=(deliver, 0.098).TaxiFree(2,0);
+
+TaxiOccupied_2_1(1,2):=(deliver, 0.038).TaxiFree(2,1);
+
+TaxiOccupied_2_2(1,2):=(deliver, 0.044).TaxiFree(2,2);
+
+TaxiOccupied_0_0(2,0):=(deliver, 0.047).TaxiFree(0,0);
+
+TaxiOccupied_0_1(2,0):=(deliver, 0.02).TaxiFree(0,1);
+
+TaxiOccupied_0_2(2,0):=(deliver, 0.022).TaxiFree(0,2);
+
+TaxiOccupied_1_0(2,0):=(deliver, 0.069).TaxiFree(1,0);
+
+TaxiOccupied_1_1(2,0):=(deliver, 0.03).TaxiFree(1,1);
+
+TaxiOccupied_1_2(2,0):=(deliver, 0.049).TaxiFree(1,2);
+
+TaxiOccupied_2_1(2,0):=(deliver, 0.089).TaxiFree(2,1);
+
+TaxiOccupied_2_2(2,0):=(deliver, 0.078).TaxiFree(2,2);
+
+TaxiOccupied_0_0(2,1):=(deliver, 0.096).TaxiFree(0,0);
+
+TaxiOccupied_0_1(2,1):=(deliver, 0.082).TaxiFree(0,1);
+
+TaxiOccupied_0_2(2,1):=(deliver, 0.079).TaxiFree(0,2);
+
+TaxiOccupied_1_0(2,1):=(deliver, 0.043).TaxiFree(1,0);
+
+TaxiOccupied_1_1(2,1):=(deliver, 0.039).TaxiFree(1,1);
+
+TaxiOccupied_1_2(2,1):=(deliver, 0.006).TaxiFree(1,2);
+
+TaxiOccupied_2_0(2,1):=(deliver, 0.045).TaxiFree(2,0);
+
+TaxiOccupied_2_2(2,1):=(deliver, 0.064).TaxiFree(2,2);
+
+TaxiOccupied_0_0(2,2):=(deliver, 0.038).TaxiFree(0,0);
+
+TaxiOccupied_0_1(2,2):=(deliver, 0.056).TaxiFree(0,1);
+
+TaxiOccupied_0_2(2,2):=(deliver, 0.085).TaxiFree(0,2);
+
+TaxiOccupied_1_0(2,2):=(deliver, 0.064).TaxiFree(1,0);
+
+TaxiOccupied_1_1(2,2):=(deliver, 0.006).TaxiFree(1,1);
+
+TaxiOccupied_1_2(2,2):=(deliver, 0.058).TaxiFree(1,2);
+
+TaxiOccupied_2_0(2,2):=(deliver, 0.075).TaxiFree(2,0);
+
+TaxiOccupied_2_1(2,2):=(deliver, 0.027).TaxiFree(2,1);
+
+
+#agents
+UserIdle(0,0)[20] || TaxiFree(0,0)[10] || UserIdle(0,1)[20] || TaxiFree(0,1)[10] || UserIdle(0,2)[20] || TaxiFree(0,2)[10] || UserIdle(1,0)[20] || TaxiFree(1,0)[10] || UserIdle(1,1)[20] || TaxiFree(1,1)[10] || UserIdle(1,2)[20] || TaxiFree(1,2)[10] || UserIdle(2,0)[20] || TaxiFree(2,0)[10] || UserIdle(2,1)[20] || TaxiFree(2,1)[10] || UserIdle(2,2)[20] || TaxiFree(2,2)[10]

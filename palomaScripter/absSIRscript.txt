@@ -1,0 +1,11 @@
+#params
+param r=2;
+param mu=1;
+param p=1;
+param alpha = 0.05;
+param d=2;
+
+#states
+
+
+#agents

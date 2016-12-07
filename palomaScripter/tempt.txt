@@ -1,0 +1,9 @@
+#params
+param o = 10;
+param d = 1;
+param rb = 0.2;
+param rw = 0.1;
+
+#states
+
+#agents
