@@ -1,0 +1,737 @@
+0.0788:0.1176:0.0765
+River Street , Clerkenwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Phillimore Gardens, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Christopher Street, Liverpool Street#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. Chad's Street, King's Cross#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sedding Street, Sloane Square#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Broadcasting House, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Charlbert Street, St. John's Wood#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lodge Road, St. John's Wood#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+New Globe Walk, Bankside#0.0471#0.0149:0.015:0.0231#8#0.0:0.0:0.0
+Park Street, Bankside#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Brunswick Square, Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Malet Street, Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Scala Street, Fitzrovia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Belgrove Street , King's Cross#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Great Russell Street, Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cartwright Gardens , Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hatton Wall, Holborn#0.0373#0.0075:0.095:0.0231#23#0.0:0.0:0.0
+Drury Lane, Covent Garden#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Taviton Street, Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Drummond Street , Euston#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Hampstead Road (Cartmel), Euston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Northington Street , Holborn#0.027#0.0:0.0:0.0077#1#0.0:0.0:0.0
+Red Lion Square, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+British Museum, Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Doric Way , Somers Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ampton Street , Clerkenwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bouverie Street, Temple#0.05#0.0:0.0:0.0077#1#0.0:0.0:0.0
+Bolsover Street, Fitzrovia#0.0435#0.0:0.005:0.0#1#0.0:0.0:0.0
+Hereford Road, Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Windsor Terrace, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Leonard Circus , Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Pancras Road, King's Cross#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+De Vere Gardens, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Penywern Road, Earl's Court#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Abingdon Villas, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Shoreditch High Street, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Commercial Street, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sun Street, Liverpool Street#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wenlock Road , Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Crawford Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bruton Street, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Boston Place, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Nesham Street, Wapping#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Warwick Avenue Station, Maida Vale#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Godliman Street, St. Paul's#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Curzon Street, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0012
+East Road, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Finsbury Library , Finsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Roscoe Street, St. Luke's#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Golden Lane, Barbican#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Finsbury Circus, Liverpool Street#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Paddington Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Guilford Street , Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+New Inn Yard, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Rodney Street, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lisson Grove, St. John's Wood#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Great Dover Street, The Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cotton Garden Estate, Kennington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Murray Grove , Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+William IV Street, Strand#0.0667#0.0149:0.01:0.0#4#0.0:0.0:0.0
+Gower Place , Euston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Holborn Circus, Holborn#0.0345#0.0:0.01:0.0#2#0.0:0.0:0.0
+Hatton Garden, Holborn#0.0333#0.0:0.005:0.0#1#0.0:0.0:0.0
+Theobald's Road , Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Euston Road, Euston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Calshot Street , King's Cross#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Newgate Street , St. Paul's#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Farringdon Lane, Clerkenwell#0.0308#0.0:0.015:0.0077#4#0.0:0.0:0.0
+Old Street Station, St. Luke's#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Vauxhall Cross, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Torrens Street, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Longford Street, The Regent's Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Russell Square Station, Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sadlers Sports Centre, Finsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Great Titchfield Street, Fitzrovia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Chancery Lane, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Panton Street, West End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Breams Buildings, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Tanner Street, Bermondsey#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sancroft Street, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Devonshire Square, Liverpool Street#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bayley Street , Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Tavistock Place, Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Harrington Square 1, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Walnut Tree Walk, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Borough Road, Elephant & Castle#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cloudesley Road, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bricklayers Arms, Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Aldersgate Street, Barbican#0.0347#0.0448:0.0:0.0#6#0.0:0.0:0.0
+Falkirk Street, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Gloucester Road (North), Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hampstead Road, Euston#0.0#0.0:0.0:0.0#0#0.0:6.0E-4:6.0E-4
+Old Quebec Street, Marylebone#0.0769#0.0:0.0:0.0077#1#0.0:0.0:0.0
+Albert Embankment, Vauxhall#0.087#0.0149:0.0:0.0#2#0.0:0.0:0.0
+Queen Street 1, Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Jewry Street, Aldgate#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Vicarage Gate, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Crosswall, Tower#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westbourne Grove, Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Woodstock Street, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Finsbury Leisure Centre, St. Luke's#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Abbey Orchard Street, Westminster#0.0833#0.0:0.005:0.0#1#0.0:0.0:0.0
+Soho Square , Soho#0.0545#0.0149:0.005:0.0#3#0.0:0.0:0.0
+Wellington Road, St. John's Wood#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Park Lane , Hyde Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Stonecutter Street, Holborn#0.0238#0.0:0.005:0.0#1#0.0:0.0:0.0
+Gloucester Road (Central), South Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0018
+Park Road (Baker Street), The Regent's Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Braham Street, Aldgate#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Little Argyll Street, West End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lollard Street, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Rochester Row, Westminster#0.1647#0.0821:0.01:0.0077#14#0.0:0.0:0.0
+Bath Street, St. Luke's#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+The Guildhall, Guildhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Baker Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Norton Folgate, Liverpool Street#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. John Street, Finsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Eaton Square, Belgravia#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Borough High Street, The Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Museum of London, Barbican#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wood Street, Guildhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Emperor's Gate, South Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Golden Square, Soho#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Tower Gardens , Tower#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Eversholt Street , Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bethnal Green Road, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Derry Street, Kensington#0.05#0.0075:0.0:0.0#1#0.0:0.0:6.0E-4
+Wapping High Street, Wapping#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Clerkenwell Green, Clerkenwell#0.0335#0.0149:0.005:0.0231#6#0.0:0.0:0.0
+Queen Victoria Street, St. Paul's#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bourne Street, Belgravia#0.1304#0.0:0.01:0.0077#3#0.0:6.0E-4:0.0012
+Green Street, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lambeth Road, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Finsbury Square , Moorgate#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Chapel Place, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+West Cromwell Road, Earl's Court#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Pont Street, Knightsbridge#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kennington Cross, Kennington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ilchester Place, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Vauxhall Bridge , Pimlico#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Portugal Street, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Tachbrook Street, Victoria#0.1818#0.0075:0.005:0.0#2#0.0024:0.0018:0.0012
+Kennington Road Post Office, Oval#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Holy Trinity Brompton, Knightsbridge#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Chepstow Villas, Notting Hill#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hampton Street, Walworth#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bayswater Road, Hyde Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Waterloo Station 3, Waterloo#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lexham Gardens, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+New Kent Road, The Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wright's Lane, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Trebovir Road, Earl's Court#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Great Marlborough Street, Soho#0.0488#0.0075:0.015:0.0#4#0.0:0.0:0.0
+Waterloo Place, St. James's#0.0857#0.0224:0.0:0.0#3#0.0:0.0:0.0
+Guildhouse Street, Victoria#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Southampton Place, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sloane Avenue, Knightsbridge#0.1429#0.0:0.0:0.0077#1#0.0:0.0:0.0
+Cleveland Gardens, Bayswater#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+Orsett Terrace, Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Seville Street, Knightsbridge#0.1429#0.0075:0.005:0.0#2#0.0:0.0:0.0
+Eccleston Place, Victoria#0.3571#0.0075:0.02:0.0#5#0.0:0.0:0.0012
+Argyll Road, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Porchester Place, Paddington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hardwick Street, Clerkenwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Collingham Gardens, Earl's Court#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sumner Place, South Kensington#0.1111#0.0:0.0:0.0077#1#0.0:0.0:0.0
+Waterloo Road, South Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Strand, Strand#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Appold Street, Liverpool Street#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Gloucester Terrace, Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ashley Place, Victoria#0.1333#0.0:0.01:0.0#2#0.0:0.0:0.0
+Warwick Square, Pimlico#0.0#0.0:0.0:0.0#0#0.0012:0.0:6.0E-4
+North Audley Street, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Belgrave Square, Belgravia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bell Street , Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Riverlight North, Nine Elms#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Portland Place, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Alderney Street, Pimlico#0.2222#0.0149:0.005:0.0231#6#6.0E-4:0.0:0.0
+South Wharf Road, Paddington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Queen's Gate (South), South Kensington#0.087#0.0:0.005:0.0385#6#0.0:0.0:0.0
+Nutford Place, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Claremont Square, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Rampayne Street, Pimlico#0.134#0.0821:0.11:0.0769#43#0.0:0.0:6.0E-4
+Hyde Park Corner, Hyde Park#0.125#0.0075:0.0:0.0#1#0.0:0.0:0.0
+Wardour Street, Soho#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bankside Mix, Bankside#0.0476#0.0075:0.005:0.0#2#0.0:0.0:0.0
+Hop Exchange, The Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Milroy Walk, South Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Union Street, The Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Stamford Street, South Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Great Tower Street, Monument#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+LMU Commercial Road, Whitechapel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Dorset Square, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Leman Street, Aldgate#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+West Smithfield Rotunda, Farringdon#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Margery Street, Clerkenwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Grosvenor Crescent, Belgravia#0.1053#0.0149:0.005:0.0077#4#0.0:0.0:0.0
+Mallory Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Denyer Street, Knightsbridge#0.2#0.0075:0.0:0.0#1#0.0:0.0:0.0
+Hinde Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cadogan Place, Knightsbridge#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Campden Hill Road, Notting Hill#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wellington Arch, Hyde Park#0.1429#0.0075:0.0:0.0#1#0.0:0.0:0.0
+Endsleigh Gardens, Euston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Moorfields, Moorgate#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Old Brompton Road, South Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wormwood Street, Liverpool Street#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. Luke's Church, Chelsea#0.1111#0.0075:0.0:0.0#1#6.0E-4:0.0:0.0
+Bramham Gardens, Earl's Court#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Chelsea Green, Chelsea#0.0#0.0:0.0:0.0#0#0.0135:0.0029:0.0012
+Horseferry Road, Westminster#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Knightsbridge, Hyde Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Rodney Road , Walworth#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Whiteley's, Bayswater#0.0357#0.0:0.005:0.0#1#0.0:0.0:0.0
+Notting Hill Gate Station, Notting Hill#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Great Percy Street, Clerkenwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. James's Square, St. James's#0.0857#0.0075:0.01:0.0#3#0.0:0.0:0.0
+Whitehall Place, Strand#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Poured Lines, Bankside#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Queen's Gate (Central), South Kensington#0.1053#0.0075:0.005:0.0#2#0.0:0.0:0.0
+Carey Street, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Pall Mall East, West End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Liverpool Road (N1 Centre), Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kennington Road  , Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Fashion Street, Whitechapel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Vaughan Way, Wapping#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Frampton Street, Paddington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Warren Street Station, Euston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Colombo Street, Southwark#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Beaumont Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Gloucester Street, Pimlico#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Earnshaw Street , Covent Garden#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Grosvenor Road, Pimlico#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Berry Street, Clerkenwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. John's Wood Church, The Regent's Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Triangle Car Park, Hyde Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Harper Road, The Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Royal Avenue 1, Chelsea#0.2804#0.1791:0.03:0.0#30#0.0:0.0:0.0
+Brushfield Street, Liverpool Street#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Jubilee Gardens, South Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Shoreditch Park, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Chadwell Street, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Clifton Road, Maida Vale#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Houghton Street, Strand#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westminster University, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kensington Gore, Knightsbridge#0.0465#0.0:0.01:0.0#2#0.0:0.0:0.0
+Broadwick Street, Soho#0.0435#0.0075:0.0:0.0#1#0.0:0.0:0.0
+Princes Square, Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+LSBU (Borough Road), Elephant & Castle#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. Mary Axe, Aldgate#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Tysoe Street, Clerkenwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Southwick Street, Paddington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Queen's Gate (North), Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Regency Street, Westminster#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Belgrave Road, Victoria#0.3333#0.0:0.005:0.0#1#0.0:0.0:6.0E-4
+Empire Square, The Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kennington Lane Rail Bridge, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+London Zoo,  The Regent's Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Baylis Road, Waterloo#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Belvedere Road, South Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Warwick Road, Olympia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Barbican Centre, Barbican#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lower Thames Street, Monument#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kensington Church Street, Kensington#0.0044#0.0075:0.005:0.0#2#0.0:0.0:6.0E-4
+Tooley Street, Bermondsey#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+North Wharf Road, Paddington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Royal Avenue 2, Chelsea#0.24#0.0448:0.0:0.0#6#0.0:6.0E-4:0.0
+Smith Square, Westminster#0.0769#0.0:0.0:0.0077#1#0.0:0.0:0.0
+Lambeth North Station, Waterloo#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. John's Wood Road, St. John's Wood#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bedford Way, Bloomsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Elizabeth Bridge, Victoria#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+South Audley Street, Mayfair#0.0698#0.0:0.015:0.0#3#0.0:0.0:0.0
+Winsland Street, Paddington#0.0526#0.0:0.005:0.0#1#0.0:0.0:0.0
+Claverton Street, Pimlico#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Montpelier Street, Knightsbridge#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kensington Olympia Station, Olympia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. George's Square, Pimlico#0.0445#0.0:0.005:0.2077#28#0.0:0.0:0.0
+Swan Street, The Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Knaresborough Place, Earl's Court#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Geraldine Street, Elephant & Castle#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Curlew Street, Shad Thames#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Vincent Square, Westminster#0.1321#0.0149:0.025:0.0#7#6.0E-4:0.0:0.0
+Serpentine Car Park, Hyde Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Marylebone Lane, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Putney Pier, Wandsworth#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Albert Gate, Hyde Park#0.1429#0.0075:0.0:0.0#1#6.0E-4:0.0:0.0
+Cumberland Gate, Hyde Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kennington Lane Tesco, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Rathbone Street, Fitzrovia #0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Black Lion Gate, Kensington Gardens#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Long Lane , Bermondsey#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Embankment (Savoy), Strand#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Black Prince Road, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Foley Street, Fitzrovia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Grove End Road, St. John's Wood#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wells Street, Fitzrovia #0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Tyers Gate, Bermondsey#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+The Tennis Courts, The Regent's Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cardinal Place, Victoria#0.0747#0.0224:0.08:0.1077#33#0.0:0.0:0.0
+Dickens Square, Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sackville Street, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Baldwin Street, St. Luke's#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Queen Mother Sports Centre, Victoria#0.1667#0.0:0.0:0.0077#1#0.0:0.0:0.0
+Bermondsey Street, Bermondsey#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Palissy Street, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Clifton Street, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ontario Street, Elephant & Castle#0.0588#0.0:0.005:0.0#1#0.0:0.0:0.0
+St. Martin's Street, West End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Graham Street, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+New North Road 1, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+New North Road 2, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Prince Albert Road, The Regent's Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Eastbourne Mews, Paddington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bunhill Row, Moorgate#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Nevern Place, Earl's Court#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Palace Gardens Terrace, Notting Hill#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0029
+Concert Hall Approach 1, South Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Tavistock Street, Covent Garden#0.0606#0.0075:0.005:0.0#2#0.0:0.0:0.0
+Concert Hall Approach 2, South Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Pembridge Villas, Notting Hill#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+Wellington Street , Strand#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Risinghill Street, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bank of England Museum, Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Craven Street, Strand#0.0746#0.0149:0.015:0.0#5#0.0:0.0:0.0
+London Zoo Car Park, The Regent's Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Goswell Road (City Uni), Finsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Flood Street, Chelsea#0.1733#0.0373:0.02:0.0308#13#0.0:6.0E-4:0.0024
+Lower Marsh, Waterloo#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Grosvenor Square, Mayfair#0.0714#0.0299:0.01:0.0077#7#0.0:0.0:0.0
+St. George Street, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Queen's Gate, Kensington Gardens#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Macclesfield Rd, St Lukes#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Vauxhall Street, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Greycoat Street , Westminster#0.1151#0.0448:0.125:0.0077#32#6.0E-4:6.0E-4:0.0012
+Northumberland Avenue, Strand#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Oval Way, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+South Kensington Station, South Kensington#0.1176#0.0075:0.025:0.2154#34#0.0:6.0E-4:6.0E-4
+Howland Street, Fitzrovia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+High Holborn , Covent Garden#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Butler Place, Westminster#0.1429#0.0:0.0:0.0077#1#0.0:0.0:0.0
+Howick Place, Westminster#0.1395#0.0:0.115:0.0077#24#0.0:0.0:0.0
+Waterloo Station 2, Waterloo#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Royal College Street, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lord's, St. John's Wood#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Alfred Place, Bloomsbury#0.0465#0.0149:0.0:0.0#2#0.0:0.0:0.0
+City Road, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Millennium Hotel, Mayfair#0.0714#0.0:0.005:0.0077#2#0.0:0.0:0.0
+Harrowby Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Harriet Street, Knightsbridge#0.175#0.0075:0.0:0.0462#7#0.0:0.0:0.0
+Paddington Green, Paddington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+King Edward Walk, Waterloo#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sardinia Street, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Prince Consort Road, Knightsbridge#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Waterloo Station 1, Waterloo#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kensington Town Hall, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Millbank Tower, Pimlico#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Waterloo Bridge, South Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Natural History Museum, South Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Turquoise Island, Notting Hill#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Stanhope Gate, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Charlotte Street, Fitzrovia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Farm Street, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Frith Street, Soho#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Marloes Road, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Moor Street, Soho#0.0769#0.0:0.005:0.0#1#0.0:0.0:0.0
+Fire Brigade Pier, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Southampton Street, Strand#0.0642#0.0:0.035:0.0#7#0.0:0.0:0.0
+Upper Grosvenor Street, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Buxton Street 1, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Clifford Street, Mayfair#0.0455#0.0:0.005:0.0#1#0.0:0.0:0.0
+Imperial College, Knightsbridge#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Snow Hill, Farringdon#0.0444#0.0:0.0:0.0154#2#0.0:0.0:0.0
+Aberdeen Place, St. John's Wood#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cadogan Gardens, Chelsea#0.25#0.0:0.005:0.0#1#0.0:0.0:6.0E-4
+Shouldham Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Devonshire Terrace, Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Holland Park, Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Brick Lane Market, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+George Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Columbia Road, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Penfold Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+George Place Mews, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Palace Gate, Kensington Gardens#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Gloucester Road Station, South Kensington#0.0#0.0:0.0:0.0#0#0.0:6.0E-4:0.0
+Speakers' Corner 2, Hyde Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Speakers' Corner 1, Hyde Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Paddington Green Police Station, Paddington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Strata, Elephant & Castle#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Edgware Road Station, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Walworth Road, Elephant & Castle#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cleaver Street, Kennington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Chelsea Bridge, Pimlico#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+Southwark Station 1, Southwark#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Southwark Station 2, Southwark#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Eaton Square (South), Belgravia#0.2#0.0:0.005:0.0#1#6.0E-4:0.0:0.0
+Ebury Bridge, Pimlico#0.0#0.0:0.0:0.0#0#0.0053:0.0047:0.0
+Harrington Square 2, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Vincent Street, Pimlico#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cheapside, Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Exhibition Road, Knightsbridge#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+South Parade, Chelsea#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Crinan Street, King's Cross#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Exhibition Road Museums, South Kensington#0.0909#0.0:0.01:0.0077#3#0.0:0.0:0.0
+Wren Street, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kennington Station, Kennington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Red Lion Street, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Vauxhall Walk, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Killick Street, King's Cross#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kennington Oval, Oval#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sail Street, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Walmer Road, Avondale#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Philpot Street, Whitechapel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bethnal Green Garden, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cheshire Street, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+York Hall, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Jubilee Crescent, Cubitt Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Fisherman's Walk West, Canary Wharf#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Shadwell Station, Shadwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Jubilee Street, Stepney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hermitage Court, Wapping#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. Katharine's Way, Tower#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Garnet Street, Shadwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Napier Avenue, Millwall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+East Ferry Road, Cubitt Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Parkway, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Castlehaven Road, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wapping Lane, Wapping#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Gunmakers Lane, Old Ford#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Burdett Road, Mile End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Aston Street, Stepney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bonny Street, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Thurtle Road, Haggerston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. Mary & St. Michael Church, Stepney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Pitfield Street North,Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Whiston Road, Haggerston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Southern Grove, Bow#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cantrell Road, Bow#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lindfield Street, Poplar#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Mostyn Grove, Bow#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hewison Street, Old Ford#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Malmesbury Road, Bow#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Millharbour, Millwall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Castalia Square, Cubitt Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lightermans Road, Millwall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Stebondale Street, Cubitt Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Spindrift Avenue, Millwall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Pott Street, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Flamborough Street, Limehouse#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Saunders Ness Road, Cubitt Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Thornfield House, Poplar#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Albert Gardens, Stepney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bromley High Street, Bow#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Old Ford Road, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Granby Street, Shoreditch#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Canton Street, Poplar#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Reardon Street, Wapping#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Christian Street, Whitechapel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Pennington Street, Wapping#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+South Quay East, Canary Wharf#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Devons Road, Bow#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bow Road Station, Bow#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Furze Green, Bow#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cephas Street, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. John's Park, Cubitt Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ackroyd Drive, Bow#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bell Lane, Liverpool Street#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Clarkson Street, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Fournier Street, Whitechapel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Fore Street, Guildhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westferry DLR, Limehouse#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sutton Street, Shadwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Pritchard's Road, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Watney Market, Stepney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Portman Square, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Russell Gardens, Olympia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Chrisp Street Market, Poplar#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ford Road, Old Ford#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Antill Road, Mile End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Teviot Street, Poplar#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bancroft Road, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Driffield Road, Old Ford#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Clinton Road, Mile End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Langdon Park, Poplar#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lancaster Gate , Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lancaster Drive, Blackwall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hansard Mews, Holland Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Clarges Street, Mayfair#0.0909#0.0075:0.0:0.0#1#0.0:0.0:0.0
+Manresa Road, Chelsea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Newby Place, Poplar#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Twig Folly Bridge, Mile End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Jubilee Plaza, Canary Wharf#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wellington Row, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Goldsmith's Row, Haggerston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Gloucester Avenue, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Queensbridge Road, Haggerston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Old Montague Street, Whitechapel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Naval Row, Blackwall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hoxton Station, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Albany Street, The Regent's Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Green Park Station, Mayfair#0.0909#0.0299:0.005:0.0#5#0.0:6.0E-4:0.0
+Salmon Lane, Limehouse#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Lansdowne Walk, Ladbroke Grove#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Percival Street, Finsbury#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Arlington Road, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+New Fetter Lane, Holborn#0.04#0.0075:0.0:0.0#1#0.0:0.0:0.0
+East India DLR, Blackwall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westminster Bridge Road, Elephant & Castle#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Gaywood  Street, Elephant & Castle#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Harford Street, Mile End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Montgomery Square, Canary Wharf#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Watney Street, Shadwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Regent's Row , Haggerston #0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Aberfeldy Street, Poplar#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westfield Eastern Access Road, Shepherd's Bush#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Heron Quays DLR, Canary Wharf#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+King Edward Street, St Pauls#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Page Street, Westminster#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Abbotsbury Road, Holland Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ladbroke Grove Central, Ladbroke Grove#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Rectory Square, Stepney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bury Place, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Preston's Road, Cubitt Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Somerset House, Strand#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Selby Street, Whitechapel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westfield Ariel Way, White City#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bishop's Bridge Road West, Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Pitfield Street Central, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Upper Bank Street, Canary Wharf#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westfield Southern Terrace ,Shepherd's Bush#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Greenland Road, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Limerston Street, West Chelsea#0.0938#0.0149:0.0:0.0077#3#0.0:0.0:0.0
+Eagle Wharf Road, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Alpha Grove, Millwall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Globe Town Market, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hollybush Gardens, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Queen Street 2, Bank#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Doddington Grove, Kennington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+New Cavendish Street, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Abingdon Green, Westminster#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0012
+Ilchester Gardens, Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Mudchute DLR, Cubitt Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Monument Street, Monument#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hoxton Street, Hoxton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Drayton Gardens, West Chelsea#0.0556#0.0075:0.005:0.0#2#0.0:0.0:0.0
+Greenberry Street, St.John's Wood#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westfield Library Corner, Shepherd's Bush#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bishop's Bridge Road East, Bayswater#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Northdown Street, King's Cross#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Kingsway Southbound, Strand#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hammersmith Road, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Parson's Green , Parson's Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Fulham Park Road, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Southerton Road, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Manbre Road, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+South Lambeth Road, Vauxhall#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+BBC White City, White City#0.0357#0.0075:0.0:0.0#1#0.0:0.0:0.0
+Union Grove, Wandsworth Road#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Caldwell Street, Stockwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St Martins Close, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Seymour Place, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Addison Road, Holland Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Putney Bridge Station, Fulham#0.0566#0.0224:0.0:0.0#3#0.0:0.0:0.0
+Colet Gardens, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sugden Road, Clapham#0.0#0.0:0.0:0.0#0#0.0041:0.0:6.0E-4
+Danvers Street, West Chelsea#0.1667#0.0:0.0:0.0077#1#0.0041:0.0:0.0
+Princedale Road , Holland Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wandsworth Rd, Isley Court, Wandsworth Road#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:6.0E-4
+Woodstock Grove, Shepherd's Bush#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bradmead, Battersea Park#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+Finlay Street, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Aintree Street, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Elysium Place, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Eel Brook Common, Walham Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Irene Road, Parsons Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Surrey Lane, Battersea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wandsworth Town Station, Wandsworth#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Lansdowne Road, Ladbroke Grove#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Nantes Close, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Courland Grove, Wandsworth Road#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Queen's Circus, Battersea Park#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0012
+Normand Park, West Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Holden Street, Battersea#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+William Morris Way, Sands End#0.0455#0.0:0.0:0.0077#1#0.0:0.0:0.0
+Morie Street, Wandsworth#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Clarence Walk, Stockwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Battersea Park Road, Nine Elms#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+Sheepcote Lane, Battersea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Vereker Road North, West Kensington#0.0#0.0:0.0:0.0#0#0.0018:0.0076:6.0E-4
+Brook Green South, Brook Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Greyhound Road, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+South Park, Sands End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Spencer Park, Wandsworth Common#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Falcon Road, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Coomer Place, West Kensington#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+Silverthorne Road, Battersea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Archbishop's Park, Waterloo#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Fawcett Close, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:6.0E-4:0.0
+All Saints' Road, Portobello#0.0#0.0:0.0:0.0#0#0.0041:0.0041:0.0029
+Rainville Road, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Great Suffolk Street, The Borough#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Buckingham Gate, Westminster#0.0938#0.0075:0.005:0.0077#3#0.0:0.0:0.0
+Richmond Way, Shepherd's Bush#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Peterborough Road, Sands End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+World's End Place, West Chelsea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. Mark's Road, North Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Thorndike Close, West Chelsea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0012
+Evesham Street, Avondale#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Simpson Street, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ashmole Estate, Oval#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Crabtree Lane, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Broomhouse Lane, Parsons Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Blythe Road West, Shepherd's Bush#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ethelburga Estate, Battersea Park#0.0#0.0:0.0:0.0#0#0.0:0.0018:0.0012
+Grant Road West, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+West Kensington Station, West Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+All Saints Church, Portobello#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Phene Street, Chelsea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Clarendon Road, Avondale#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Austin Road, Battersea Park#0.0#0.0:0.0:0.0#0#0.0129:0.0:0.0
+Smugglers Way, Wandsworth#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Olympia Way, Olympia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Shepherd's Bush Road North, Shepherd's Bush#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ravenscourt Park Station, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Teversham Lane, Stockwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ashley Crescent, Battersea#0.0#0.0:0.0:0.0#0#0.0012:0.0012:0.0
+Parsons Green Station, Parsons Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Grant Road Central, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hibbert Street, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0053
+Carnegie Street, King's Cross#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Usk Road, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hartington Road, Stockwell#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Heath Road, Battersea#0.0#0.0:0.0:0.0#0#0.0:6.0E-4:6.0E-4
+Esmond Street, Putney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Orbel Street, Battersea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westbridge Road, Battersea#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Bishop's Avenue, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Crisp Road, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Dorothy Road, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Neville Gill Close, Wandsworth#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Osiers Road, Wandsworth#0.0#0.0:0.0:0.0#0#0.0:0.0018:0.0
+Beryl Road, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Maclise Road, Olympia#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Northfields, Wandsworth#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Spanish Road, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Stanley Grove, Battersea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Erin Close, Walham Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Cadogan Close, Victoria Park#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Felsham Road, Putney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Putney Rail Station, Putney#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+Islington Green, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Charing Cross Hospital, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Charlotte Terrace, Angel#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Shoreditch Court, Haggerston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Belford House, Haggerston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Battersea Church Road, Battersea#0.0#0.0:0.0:0.0#0#0.0012:0.0:0.0
+Vicarage Crescent, Battersea#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:6.0E-4
+Durant Street, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. Bride Street, Holborn#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Mexfield Road, East Putney#0.0#0.0:0.0:0.0#0#0.0:0.0018:6.0E-4
+Upper Richmond Road, Putney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Snowsfields, London Bridge#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Barons Court Station, West Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Disraeli Road, Putney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Montserrat Road , Putney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Albert Bridge Road, Battersea Park#0.0714#0.0:0.005:0.0#1#0.0018:0.0018:0.0029
+Everington Street, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Mile End Stadium, Mile End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hawley Crescent, Camden Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Stewart's Road, Wandsworth Road#0.0909#0.0075:0.0:0.0#1#0.0:0.0:0.0
+Aylward Street, Stepney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Stainsby Road , Poplar#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Dunston Road , Haggerston#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ada Street, Hackney Central#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Victoria Park Road, Hackney Central#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Star Road, West Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Wendon Street, Old Ford#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Finnis Street, Bethnal Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Stephendale Road, Sands End#0.0#0.0:0.0:0.0#0#0.0012:0.0:6.0E-4
+Alma Road, Wandsworth#0.0#0.0:0.0:0.0#0#0.0018:6.0E-4:6.0E-4
+Thessaly Road North, Wandsworth Road#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Alfreda Street, Battersea Park#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+Chesilton Road, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Putney Bridge Road, East Putney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. Peter's Terrace, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Bridge Avenue, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Michael Road, Walham Green#0.0#0.0:0.0:0.0#0#0.0:6.0E-4:0.0
+Duke Street Hill, London Bridge#0.0345#0.0075:0.0:0.0#1#0.0:0.0:0.0
+Park Lane, Mayfair#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Plough Terrace, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Grant Road East, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Queensdale Road, Shepherd's Bush#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Fulham Broadway, Walham Green#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Imperial Road, Sands End#0.0#0.0:0.0:0.0#0#0.0106:0.0012:0.0012
+Hortensia Road, West Brompton#0.0#0.0:0.0:0.0#0#0.0:6.0E-4:0.0
+Sirdar Road, Avondale#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Freston Road, Avondale#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Blenheim Crescent, Ladbroke Grove#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Oxford Road, Putney#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ingrave Street, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Upcerne Road, West Chelsea#0.0#0.0:0.0:0.0#0#0.0035:0.0:0.0
+Lots Road, West Chelsea#0.1#0.0:0.0:0.0077#1#0.0012:0.0:0.0
+Ormonde Gate, Chelsea#0.0#0.0:0.0:0.0#0#6.0E-4:0.0:0.0
+Hertford Road, De Beauvoir Town#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Haggerston Road, Haggerston #0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Culvert Road, Battersea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Newton Street, Covent Garden#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Manfred Road, East Putney#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Hammersmith Town Hall, Hammersmith#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Grenfell Road, Avondale#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+The Vale, West Chelsea#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Prince of Wales Drive, Battersea Park#0.0#0.0:0.0:0.0#0#0.0:6.0E-4:0.0
+Harcourt Terrace, West Brompton#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Westbourne Park Road, Portobello#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Broadley Terrace, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Rossmore Road, Marylebone#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Humbolt Road, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Storey's Gate, Westminster#0.0417#0.0:0.005:0.0#1#0.0:0.0:0.0
+Mile End Park Leisure Centre, Mile End#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+St. John's Road, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ranelagh Gardens, Fulham#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Ram Street, Wandsworth#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Santos Road, Wandsworth#0.0#0.0:0.0:0.0#0#0.0041:0.0118:0.0018
+Clapham Common North side, Clapham Common#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Sandilands Road, Walham Green#0.0#0.0:0.0:0.0#0#0.0:0.0:6.0E-4
+Gwendwr Road, West Kensington#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Rifle Place, Avondale#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Binfield Road, Stockwell#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Tallis Street, Temple#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Hurlingham Park, Parsons Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Little Brook Green, Brook Green#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Abyssinia Close, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0024
+Limburg Road, Clapham Junction#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Houndsditch, Aldgate#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+Imperial Wharf Station#0.0#0.0:0.0:0.0#0#0.0:0.0:0.0
+other#0.0:0.005:0.0#0.0:0.0:0.0#1#0
