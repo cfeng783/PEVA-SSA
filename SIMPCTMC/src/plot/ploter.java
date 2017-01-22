@@ -140,4 +140,35 @@ public class ploter {
 		}
 	}
 	
+	public void exportSkewness(String[] agents, String fileFolder) {
+		try{
+			RealSimuator.getCounter().prePlot();
+			PrintWriter sw = new PrintWriter(new OutputStreamWriter(new FileOutputStream(fileFolder + "/timeTraj")),true);  
+			double[] timeTraj = RealSimuator.getCounter().getTimeTrajectory();
+			for(int i=0; i<timeTraj.length; i++) {
+				//System.out.println(str);
+				sw.println(timeTraj[i]);
+			}
+			sw.close();
+			
+			double[][] skewnessTraj = RealSimuator.getCounter().getSkewnessTrajectory();
+			
+			for(String agent: agents) {
+				sw = new PrintWriter(new OutputStreamWriter(new FileOutputStream(fileFolder+"/"+agent+"_skewness")),true); 
+				int i = RealSimuator.getCounter().getAgentIndex(agent);
+				if(i != -1) {
+					for(int j=0; j<skewnessTraj[i].length; j++) {
+						sw.println(skewnessTraj[i][j]);
+					}
+				}else {
+					
+				}
+				sw.close();
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 }

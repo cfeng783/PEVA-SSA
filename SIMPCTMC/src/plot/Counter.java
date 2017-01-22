@@ -16,13 +16,14 @@ public class Counter {
 	double[][] populationTrajectory;
 	double[][] varianceTrajectory;
 	double[][] extraTrajectory; //for combined variables
+	double[][] skewnessTrajectory; //for combined variables
 	
 	ArrayList<Double> time = new ArrayList<Double>();
 	ArrayList<ArrayList<Double>> population = new ArrayList<ArrayList<Double>>();
 	
 	ArrayList<ArrayList<Double>> statistics_mean = new ArrayList<ArrayList<Double>>();
 	ArrayList<ArrayList<Double>> statistics_variance = new ArrayList<ArrayList<Double>>();
-	
+	ArrayList<ArrayList<Double>> statistics_skewness = new ArrayList<ArrayList<Double>>();
 	
 	//theses two variable count for number of agents of in specific states
 	private HashMap<String, Integer> agentIndexMap = new HashMap<String, Integer>();
@@ -73,6 +74,8 @@ public class Counter {
 			statistics_mean.add(po2);
 			ArrayList<Double> po3 = new ArrayList<Double>();
 			statistics_variance.add(po3);
+			ArrayList<Double> po4 = new ArrayList<Double>();
+			statistics_skewness.add(po4);
 		}
 		lastRecPopu = new double[i];
 	}
@@ -174,6 +177,7 @@ public class Counter {
 					//System.out.println(num);
 					statistics_mean.get(i).add(num);
 					statistics_variance.get(i).add(Math.pow(num,2));
+					statistics_skewness.get(i).add(Math.pow(num,3));
 				}
 			}
 			
@@ -207,6 +211,9 @@ public class Counter {
 				for(int j=0;j<population.get(i).size();j++) {
 					double num = population.get(i).get(j);
 					statistics_variance.get(i).set(j,Math.pow(num, 2)+statistics_variance.get(i).get(j));
+					
+					statistics_skewness.get(i).set(j,Math.pow(num, 3)+statistics_skewness.get(i).get(j));
+					
 					double real = (num+statistics_mean.get(i).get(j)*curRun)/(curRun+1); 
 					statistics_mean.get(i).set(j, real);
 				}
@@ -379,6 +386,17 @@ public class Counter {
 			}
 		}
 		
+		skewnessTrajectory = new double[statistics_skewness.size()][];
+		for(int i=0; i<statistics_skewness.size();i++) {
+			//System.out.println("variance size: "+this.runs);
+			skewnessTrajectory[i] = new double[statistics_skewness.get(i).size()];
+			for(int j=0;j<statistics_skewness.get(i).size();j++) {
+//				varianceTrajectory[i][j] = (statistics_variance.get(i).get(j)/this.runs) 
+//					- Math.pow(populationTrajectory[i][j], 2);
+				skewnessTrajectory[i][j] = (statistics_skewness.get(i).get(j)/this.runs);//for second moment
+			}
+		}
+		
 		extraTrajectory = new double[statistics_extra.size()][];
 		for(int i=0; i<statistics_extra.size(); i++) {
 			extraTrajectory[i] = new double[statistics_extra.get(i).size()];
@@ -405,6 +423,10 @@ public class Counter {
 		return varianceTrajectory;
 	}
 	
+	public double[][] getSkewnessTrajectory(){
+		return skewnessTrajectory;
+	}
+	
 	public double[][] getExtraTrajectory() {
 		return extraTrajectory;
 	}
@@ -424,6 +446,7 @@ public class Counter {
 		timeTrajectory = null;
 		populationTrajectory = null;
 		varianceTrajectory = null;
+		skewnessTrajectory = null;
 		
 		time.clear();
 		population.clear();
@@ -432,6 +455,7 @@ public class Counter {
 		
 		statistics_mean.clear();
 		statistics_variance.clear();
+		statistics_skewness.clear();
 		
 		//theses two variable count for number of agents of in specific states
 		agentIndexMap.clear();
