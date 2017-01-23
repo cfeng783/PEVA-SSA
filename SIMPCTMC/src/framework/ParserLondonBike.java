@@ -53,7 +53,7 @@ public class ParserLondonBike {
 	double directDpMatrix[][];
 	double dpMatrix[][];
 	double maxDpMatrix[][];
-	public final static double maxDpThreshold = 0;
+	public final static double maxDpThreshold = 0.005;
 //	final double maxDpThreshold = 1.01;
 	int[] keyStations;
 	

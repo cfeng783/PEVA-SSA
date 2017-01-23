@@ -11,6 +11,7 @@ public class Counter {
 	final static double DEFAULT_TIME_POINTS = 199.0;
 	double finalTime;
 	int runs;
+	int terminateRun;
 	
 	double[] timeTrajectory;
 	double[][] populationTrajectory;
@@ -157,14 +158,14 @@ public class Counter {
 		}
 		
 		//modelchecking
-		if(mc != null) {
-			mc.check(population.get(agentIndexMap.get(mc.getAgent())), finalTime);
-			
-			if(mc.converge()) {
-				System.out.println("ratio: " + mc.getRatio());
-				RealSimuator.converged = true;
-			}		
-		}
+//		if(mc != null) {
+//			mc.check(population.get(agentIndexMap.get(mc.getAgent())), finalTime);
+//			
+//			if(mc.converge()) {
+//				System.out.println("ratio: " + mc.getRatio());
+//				RealSimuator.converged = true;
+//			}		
+//		}
 		
 		
 		
@@ -245,35 +246,30 @@ public class Counter {
 			}
 			
 		}
-//		boolean breaked = false;
-//		if(curRun > 100 && curRun%10==0) {
-//			for(int i=0; i<statistics_mean.size(); i++) {
-//				if(i != agentIndexMap.get("Bike1@6") && i != agentIndexMap.get("Bike1@5")) {
-//					continue;
-//				}
-//				for(int j=20; j<statistics_mean.get(i).size(); j++) {
-//					double mean = statistics_mean.get(i).get(j);
-//					double std = statistics_variance.get(i).get(j) / (curRun+1)-Math.pow(mean, 2);
-//					std = Math.sqrt(std);
-//					double se = std / Math.sqrt(curRun+1);
-//					double ci = 1.96*se;
-//					double percentage = ci / mean;
-//					if(percentage == percentage && percentage > 0.01) {
-//						System.out.println(percentage);
-//						breaked = true;
-//						break;
-//					}
-//				}
-//				if(breaked) {
-//					break;
-//				}
-//				
-//			}
-//			if(breaked == false) {
-//				RealSimuator.FLAG_TERMINATE = true;
-//				this.runs = curRun+1;
-//			}
-//		}
+		boolean breaked = false;
+		if(curRun > 100 && curRun%10==0) {
+			int index = agentIndexMap.get(mc.getAgent());
+			
+			for(int j=20; j<statistics_mean.get(index).size(); j++) {
+				double mean = statistics_mean.get(index).get(j);
+				double std = statistics_variance.get(index).get(j) / (curRun+1)-Math.pow(mean, 2);
+				std = Math.sqrt(std);
+				double se = std / Math.sqrt(curRun+1);
+				double ci = 1.96*se;
+				double percentage = ci / mean;
+				if(percentage == percentage && percentage > 0.01) {
+//					System.out.println(percentage);
+					breaked = true;
+					break;
+				}
+			}
+				
+			if(breaked == false) {
+				RealSimuator.converged = true;
+				System.out.println("runs: " + curRun);
+				terminateRun = curRun+1;
+			}
+		}
 		
 //		if(curRun > 100 && curRun%10==0) {
 //			for(int i=0; i<extraMeanVars.size(); i++) {
@@ -361,6 +357,10 @@ public class Counter {
 	
 	
 	public void prePlot() {
+		if(this.terminateRun == 0) {
+			this.terminateRun = this.runs;
+		}
+		
 		//System.out.println("time size: "+time.size());
 		timeTrajectory = new double[time.size()];
 		for(int i=0; i<time.size();i++) {
@@ -382,7 +382,7 @@ public class Counter {
 			for(int j=0;j<statistics_variance.get(i).size();j++) {
 //				varianceTrajectory[i][j] = (statistics_variance.get(i).get(j)/this.runs) 
 //					- Math.pow(populationTrajectory[i][j], 2);
-				varianceTrajectory[i][j] = (statistics_variance.get(i).get(j)/this.runs);//for second moment
+				varianceTrajectory[i][j] = (statistics_variance.get(i).get(j)/this.terminateRun);//for second moment
 			}
 		}
 		
@@ -393,7 +393,7 @@ public class Counter {
 			for(int j=0;j<statistics_skewness.get(i).size();j++) {
 //				varianceTrajectory[i][j] = (statistics_variance.get(i).get(j)/this.runs) 
 //					- Math.pow(populationTrajectory[i][j], 2);
-				skewnessTrajectory[i][j] = (statistics_skewness.get(i).get(j)/this.runs);//for second moment
+				skewnessTrajectory[i][j] = (statistics_skewness.get(i).get(j)/this.terminateRun);//for second moment
 			}
 		}
 		
@@ -401,7 +401,7 @@ public class Counter {
 		for(int i=0; i<statistics_extra.size(); i++) {
 			extraTrajectory[i] = new double[statistics_extra.get(i).size()];
 			for(int j=0;j<statistics_extra.get(i).size();j++) {
-				extraTrajectory[i][j] = (statistics_extra.get(i).get(j)/this.runs);
+				extraTrajectory[i][j] = (statistics_extra.get(i).get(j)/this.terminateRun);
 			}
 		}
 		
@@ -439,9 +439,14 @@ public class Counter {
 		return extraSecMmtVarIndexMap;
 	}
 	
+	public int getTerminateRun() {
+		return terminateRun;
+	}
+	
 	public void clear() {
 		finalTime = 0;
 		runs = 0;
+		terminateRun = 0;
 		
 		timeTrajectory = null;
 		populationTrajectory = null;

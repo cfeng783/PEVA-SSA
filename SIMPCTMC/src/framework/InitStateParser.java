@@ -144,10 +144,10 @@ public class InitStateParser {
 				String[] strPhases = line.split(" ");
 				
 				for(int j=0; j<strPhases.length; j++) {
-					phases[i][j] = Integer.parseInt(strPhases[j]);
-//					phases[i][j] = 1; //just for test
+//					phases[i][j] = Integer.parseInt(strPhases[j]);
+					phases[i][j] = 1; //just for test
 					if(phases[i][j] < 1)
-					System.out.print(phases[i][j]+" ");
+						System.out.print(phases[i][j]+" ");
 				}
 				i++;
 			}
