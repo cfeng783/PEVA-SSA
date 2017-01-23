@@ -30,7 +30,7 @@ import utality.Utality;
 public class RealSimuator extends Simulator{
 	static Model model = new Model();
 	public static int finaltime=60*1;
-	public static int runs=10000;
+	public static int runs=1000;
 	public static int samplingRuns = 10;
 	static Counter counter = new Counter();
 	static GraphBuilder gb = new GraphBuilder();
@@ -45,8 +45,22 @@ public class RealSimuator extends Simulator{
 	public static void main(String[] args) {
 		Utality.init(Cache.WRITE);
 		
-		int stationNum = 15;
+		int num = 5;
+		
+		long costArray[] = new long[num];
+		
+		int runNumArray[] = new int[num];
+		
+		int agentNumArrayPrev[] = new int[num];
+		int transNumArrayPrev[] = new int[num];
+		
+		int agentNumArray[] = new int[num];
+		int transNumArray[] = new int[num];
+		
+		for( int stationNum = 0; stationNum < num ; stationNum++ ) {
 			System.out.println("current: " + stationNum);
+			
+			long startTime = System.currentTimeMillis();
 			
 			String plot = "Bike(" + stationNum + ")";
 			int keyStations[] = new int[1];
@@ -56,27 +70,69 @@ public class RealSimuator extends Simulator{
 			
 			ParserLondonBike parser = new ParserLondonBike(keyStations);
 			parser.parse(model);
-			model.print2File();
 			
-			System.out.println("Prev Trans num: " + model.getTransArray().size());
-//			System.out.println("Prev Agent num: " + model.getInitAgentMap().keySet().size());
+			agentNumArrayPrev[stationNum] = model.getInitAgentMap().keySet().size();
+			transNumArrayPrev[stationNum] = model.getTransArray().size();
 			
 			pvd.insertPlotVar(plot);
 
 			counter.setUp(samplingRuns, finaltime, model.getInitAgentMap(), new ArrayList<String>());
-			new RealSimuator().start(samplingRuns);
+//			new RealSimuator().start(samplingRuns);
 			
-			gb.init(model.getInitAgentMap(), model.getTransArray());
-			
-			ReductionProposer rp = new ReductionProposer(model, plot);
-			rp.getOptimalProposal(theta);
+//			ReductionProposer rp = new ReductionProposer(model, plot);
+//			rp.getOptimalProposal(theta);
 			
 			System.out.println("Trans num: " + model.getTransArray().size());
 			System.out.println("Agent num: " + model.getInitAgentMap().keySet().size());
+			agentNumArray[stationNum] = model.getInitAgentMap().keySet().size();
+			transNumArray[stationNum] = model.getTransArray().size();
 			
-			MomentGenerator mg = new MomentGenerator(model.getInitAgentMap(), model.getTransArray());
-			mg.setupIndex(order);
+			counter.clear();
+			ModelChecker mc = new ModelChecker(plot, 0, finaltime-5, ModelChecker.LESS, 35);
+			counter.setUp(runs, finaltime, model.getInitAgentMap(), mc);
+			new RealSimuator().start(runs);
 			
+			long cost = System.currentTimeMillis() - startTime;
+			costArray[stationNum] = cost;
+			
+			runNumArray[stationNum] = counter.getTerminateRun();
+			pvd.clear();
+			model.clear();
+			counter.clear();
+			converged = false;
+			
+		}
+		
+		System.out.println();
+		printCI(costArray, "time cost");
+		System.out.println();
+		computeCI(runNumArray, "run num");
+		System.out.println();
+		computeCI(agentNumArrayPrev, "prev agent num");	
+		System.out.println();
+		computeCI(agentNumArray, "current agent num");
+		System.out.println();
+		computeCI(transNumArrayPrev, "prev trans num");	
+		System.out.println();
+		computeCI(transNumArray, "current trans num");	
+//			model.print2File();
+			
+//			System.out.println("Prev Trans num: " + model.getTransArray().size());
+//			System.out.println("Prev Agent num: " + model.getInitAgentMap().keySet().size());
+			
+			
+			
+			
+			
+//			gb.init(model.getInitAgentMap(), model.getTransArray());
+			
+			
+			
+			
+			
+//			MomentGenerator mg = new MomentGenerator(model.getInitAgentMap(), model.getTransArray());
+//			mg.setupIndex(order);
+//			
 //			FirstOrderIntegrator dp853 = new DormandPrince853Integrator(1.0e-6, 10.0, 1.0e-3, 1.0e-3);
 //			
 //			StepHandler stepHandler = new StepHandler() {
@@ -119,10 +175,7 @@ public class RealSimuator extends Simulator{
 //				writeToFile(y[index], y[secondindex], y[thirdIndex], parser.getTrueNum(), parser.getCapacity(), parser.getInitNum());
 //			}
 			
-			counter.clear();
-			ModelChecker mc = new ModelChecker(plot, 0, finaltime-5, ModelChecker.LESS, 35);
-			counter.setUp(runs, finaltime, model.getInitAgentMap(), mc);
-			new RealSimuator().start(runs);
+			
 			
 			
 		
@@ -151,11 +204,51 @@ public class RealSimuator extends Simulator{
        
         ploter p = new ploter();
     	p.plot(pvd.getPlots());
-//    	p.export(pvd.getPlots(), System.getProperty("user.home") + "/Dropbox/matlab/data/");
-//    	p.plotVariance(pvd.getPlots());
-//    	p.exportVariance(pvd.getPlots(), System.getProperty("user.home") + "/Dropbox/matlab/data/");
+    	p.export(pvd.getPlots(), "../ori-data/");
+    	p.plotVariance(pvd.getPlots());
+    	p.exportVariance(pvd.getPlots(), "../ori-data/");
+    	p.exportSkewness(pvd.getPlots(), "../ori-data/");
     	//p.plotCoRR();
     }
+	
+	static void printCI(long array[], String statistics) {
+		double avg = 0;
+		for(int i=0; i<array.length; i++) {
+			avg += array[i];
+		}
+		
+		avg = avg*1.0/array.length;
+		
+		double sigma = 0;
+		for(int i=0; i<array.length; i++) {
+			sigma += Math.pow(array[i]-avg, 2);
+		}
+		sigma = Math.sqrt(sigma*1.0/array.length);
+		double interval = 1.96*sigma/(Math.sqrt(array.length));
+		
+		System.out.println(statistics + " " + "avg: " + avg);
+		System.out.println(statistics + " " + "interval: " + interval);
+	}
+	
+	static void computeCI(int array[], String statistics) {
+		double avg = 0;
+		for(int i=0; i<array.length; i++) {
+			avg += array[i];
+		}
+		
+		avg = avg*1.0/array.length;
+		
+		double sigma = 0;
+		for(int i=0; i<array.length; i++) {
+			sigma += Math.pow(array[i]-avg, 2);
+		}
+		sigma = Math.sqrt(sigma*1.0/array.length);
+		double interval = 1.96*sigma/(Math.sqrt(array.length));
+		
+		System.out.println(statistics + " " + "avg: " + avg);
+		System.out.println(statistics + " " + "interval: " + interval);
+	}
+	
 	
 	static void writeToFile(double mean, int trueNum, int capacity, int initNum){
 		//PrintWriter sw = new PrintWriter(new OutputStreamWriter(new FileOutputStream("~/Dropbox/Spatial PEPA/fluidflow.m")),true);  

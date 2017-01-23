@@ -33,12 +33,12 @@ public class ReductionProposer {
 		this.target = target;
 		this.drg = new DRG(model.getInitAgentMap(), model.getTransArray());
 		this.drg.makeGraph();
-//		System.out.println("graph initialised!");
+		System.out.println("DCG graph initialised!");
 	}
 	
 	public void getOptimalProposal(double theta) {
-		ArrayList<Double> yOrigin = solveOdeModel(model.getInitAgentMap(), model.getTransArray());
-		
+//		ArrayList<Double> yOrigin = solveOdeModel(model.getInitAgentMap(), model.getTransArray());
+		ArrayList<Double> yOrigin = null;
 //		boolean isConverged = false;
 //		double upbound = 1;
 //		double lowbound = 0;
