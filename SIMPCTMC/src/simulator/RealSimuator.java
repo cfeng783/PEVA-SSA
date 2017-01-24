@@ -31,7 +31,7 @@ public class RealSimuator extends Simulator{
 	static Model model = new Model();
 	public static int finaltime=60*1;
 	public static int runs=1000;
-	public static int samplingRuns = 10;
+	public static int samplingRuns = 100;
 	static Counter counter = new Counter();
 	static GraphBuilder gb = new GraphBuilder();
 	static PlotVarDefiner pvd = new PlotVarDefiner();
@@ -45,7 +45,7 @@ public class RealSimuator extends Simulator{
 	public static void main(String[] args) {
 		Utality.init(Cache.WRITE);
 		
-		int num = 5;
+		int num = 50;
 		
 		long costArray[] = new long[num];
 		
@@ -57,8 +57,13 @@ public class RealSimuator extends Simulator{
 		int agentNumArray[] = new int[num];
 		int transNumArray[] = new int[num];
 		
+		int convergeArray[] = new int[num];
+		
+		int[] validStations = {0,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,0,1,0,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,1,0,0,0,1,1,1,1,0,1};
+		
 		for( int stationNum = 0; stationNum < num ; stationNum++ ) {
 			System.out.println("current: " + stationNum);
+			
 			
 			long startTime = System.currentTimeMillis();
 			
@@ -77,8 +82,7 @@ public class RealSimuator extends Simulator{
 			pvd.insertPlotVar(plot);
 
 			counter.setUp(samplingRuns, finaltime, model.getInitAgentMap(), new ArrayList<String>());
-//			new RealSimuator().start(samplingRuns);
-			
+//			new RealSimuator().start(samplingRuns);			
 //			ReductionProposer rp = new ReductionProposer(model, plot);
 //			rp.getOptimalProposal(theta);
 			
@@ -96,6 +100,11 @@ public class RealSimuator extends Simulator{
 			costArray[stationNum] = cost;
 			
 			runNumArray[stationNum] = counter.getTerminateRun();
+			
+			if(mc.isConverged()) {
+				convergeArray[stationNum] = 1;
+			}
+			
 			pvd.clear();
 			model.clear();
 			counter.clear();
@@ -114,7 +123,14 @@ public class RealSimuator extends Simulator{
 		System.out.println();
 		computeCI(transNumArrayPrev, "prev trans num");	
 		System.out.println();
-		computeCI(transNumArray, "current trans num");	
+		computeCI(transNumArray, "current trans num");
+		System.out.println();
+		System.out.println("converge status: ");
+		System.out.print("[");
+		for(int i=0; i<convergeArray.length; i++) {
+			System.out.print(convergeArray[i] + ",");
+		}
+		System.out.print("]");
 //			model.print2File();
 			
 //			System.out.println("Prev Trans num: " + model.getTransArray().size());
@@ -203,11 +219,18 @@ public class RealSimuator extends Simulator{
         }
        
         ploter p = new ploter();
-    	p.plot(pvd.getPlots());
+//    	p.plot(pvd.getPlots());
+//    	p.plotVariance(pvd.getPlots());
+    	
+//    	p.export(pvd.getPlots(), "../data/");
+//    	p.exportVariance(pvd.getPlots(), "../data/");
+//    	p.exportSkewness(pvd.getPlots(), "../data/");
+    	
+    	
     	p.export(pvd.getPlots(), "../ori-data/");
-    	p.plotVariance(pvd.getPlots());
     	p.exportVariance(pvd.getPlots(), "../ori-data/");
     	p.exportSkewness(pvd.getPlots(), "../ori-data/");
+    	
     	//p.plotCoRR();
     }
 	
