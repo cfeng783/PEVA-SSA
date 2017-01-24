@@ -18,6 +18,8 @@ public class ModelChecker {
 	private int succ = 0;
 	private int total = 0;
 	
+	private boolean converged = false;
+	
 	public ModelChecker(String agent, double t_begin, double t_end, int operator, double comparator) {
 		this.setAgent(agent);
 		this.setT_begin(t_begin);
@@ -56,6 +58,14 @@ public class ModelChecker {
 
 	public void setAgent(String agent) {
 		this.agent = agent;
+	}
+	
+	public void confirmConverge() {
+		this.converged = true;
+	}
+	
+	public boolean isConverged() {
+		return this.converged;
 	}
 	
 	public boolean check(ArrayList<Double> trace, double finaltime) {
