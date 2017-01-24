@@ -9,13 +9,15 @@ public class TraceCompare {
 
 	public static void main(String[] args) throws IOException  {
 		
-		int num = 5;
-		int moment = 3;
+		int[] validSts = {0,1,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0};
+		
+		int num = 50;
+		int moment = 1;
 		
 		double errorSamples[] = new double[180*num];
 		
 		for( int stationNum = 0; stationNum < num ; stationNum++ ) {
-			String agent = "Bike(" + stationNum + ")";
+			String agent = "Bike(" + 0 + ")";
 			double[] sampleArray = getErrorRatios(agent, moment);
 			for(int i=0; i<180; i++) {
 				System.out.println(sampleArray[i]);
@@ -23,24 +25,33 @@ public class TraceCompare {
 			}
 		}
 		
-		printCI(errorSamples, "");
+		printCI(errorSamples, validSts ,"");
 		
 	}
 	
-	static void printCI(double array[], String statistics) {
+	static void printCI(double array[], int[] validSts, String statistics) {
+		
+		int total = 0;
+		
 		double avg = 0;
 		for(int i=0; i<array.length; i++) {
-			avg += array[i];
+			if(validSts[i/180] == 1) {
+				avg += array[i];
+				total += 1;
+			}
+			
 		}
 		
-		avg = avg*1.0/array.length;
+		avg = avg*1.0/total;
 		
 		double sigma = 0;
 		for(int i=0; i<array.length; i++) {
-			sigma += Math.pow(array[i]-avg, 2);
+			if(validSts[i/180] == 1) {
+				sigma += Math.pow(array[i]-avg, 2);
+			}
 		}
-		sigma = Math.sqrt(sigma*1.0/array.length);
-		double interval = 1.96*sigma/(Math.sqrt(array.length));
+		sigma = Math.sqrt(sigma*1.0/total);
+		double interval = 1.96*sigma/(Math.sqrt(total));
 		
 		System.out.println(statistics + " " + "avg: " + avg);
 		System.out.println(statistics + " " + "interval: " + interval);
@@ -54,7 +65,7 @@ public class TraceCompare {
 		
 		for(int i=0; i<trace1.length; i++) {
 //			System.out.println(trace1[i]);
-			errorTrace[i] = Math.abs(trace1[i]-trace2[i])/(trace1[i]+0.0001);
+			errorTrace[i] = Math.abs(trace1[i]-trace2[i])/(trace1[i]);
 		}
 		return errorTrace;
 		
