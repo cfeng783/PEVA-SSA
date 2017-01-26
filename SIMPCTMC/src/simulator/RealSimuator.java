@@ -30,7 +30,7 @@ import utality.Utality;
 public class RealSimuator extends Simulator{
 	static Model model = new Model();
 	public static int finaltime=60*1;
-	public static int runs=1000;
+	public static int runs=10000;
 	public static int samplingRuns = 100;
 	static Counter counter = new Counter();
 	static GraphBuilder gb = new GraphBuilder();
@@ -38,14 +38,14 @@ public class RealSimuator extends Simulator{
 	
 	static int order = 1; 
 	
-	static double theta = 0.01;
+	static double theta = 0.005;
 	
 	public static boolean converged = false;
 	
 	public static void main(String[] args) {
 		Utality.init(Cache.WRITE);
 		
-		int num = 50;
+		int num = 10;
 		
 		long costArray[] = new long[num];
 		
@@ -58,8 +58,7 @@ public class RealSimuator extends Simulator{
 		int transNumArray[] = new int[num];
 		
 		int convergeArray[] = new int[num];
-		
-		int[] validStations = {0,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,0,1,0,1,0,1,1,0,1,1,1,0,0,1,1,1,0,1,0,0,1,0,0,0,1,1,1,1,0,1};
+		System.out.println(theta);
 		
 		for( int stationNum = 0; stationNum < num ; stationNum++ ) {
 			System.out.println("current: " + stationNum);
@@ -82,9 +81,9 @@ public class RealSimuator extends Simulator{
 			pvd.insertPlotVar(plot);
 
 			counter.setUp(samplingRuns, finaltime, model.getInitAgentMap(), new ArrayList<String>());
-//			new RealSimuator().start(samplingRuns);			
-//			ReductionProposer rp = new ReductionProposer(model, plot);
-//			rp.getOptimalProposal(theta);
+			new RealSimuator().start(samplingRuns);			
+			ReductionProposer rp = new ReductionProposer(model, plot);
+			rp.getOptimalProposal(theta);
 			
 			System.out.println("Trans num: " + model.getTransArray().size());
 			System.out.println("Agent num: " + model.getInitAgentMap().keySet().size());
@@ -204,7 +203,9 @@ public class RealSimuator extends Simulator{
         
         int j = 0;
         while(j<runs && converged == false) {
-//        	System.out.println("Round "+j);
+        	if(j%1000 == 0)
+        		System.out.println("Round "+j);
+        	
         	events.clear();
         	model.reset(j);
         	
@@ -222,14 +223,17 @@ public class RealSimuator extends Simulator{
 //    	p.plot(pvd.getPlots());
 //    	p.plotVariance(pvd.getPlots());
     	
-//    	p.export(pvd.getPlots(), "../data/");
-//    	p.exportVariance(pvd.getPlots(), "../data/");
-//    	p.exportSkewness(pvd.getPlots(), "../data/");
+        if(runs > 200) {
+        	p.export(pvd.getPlots(), "../data/"+ theta + "/");
+        	p.exportVariance(pvd.getPlots(), "../data/"+ theta + "/");
+        	p.exportSkewness(pvd.getPlots(), "../data/"+ theta + "/");
+        }
     	
     	
-    	p.export(pvd.getPlots(), "../ori-data/");
-    	p.exportVariance(pvd.getPlots(), "../ori-data/");
-    	p.exportSkewness(pvd.getPlots(), "../ori-data/");
+    	
+//    	p.export(pvd.getPlots(), "../ori-data/");
+//    	p.exportVariance(pvd.getPlots(), "../ori-data/");
+//    	p.exportSkewness(pvd.getPlots(), "../ori-data/");
     	
     	//p.plotCoRR();
     }

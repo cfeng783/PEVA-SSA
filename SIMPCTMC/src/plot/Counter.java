@@ -249,7 +249,7 @@ public class Counter {
 		boolean breaked = false;
 		if(curRun > 100 && curRun%100==0) {
 			
-			System.out.println(curRun);
+//			System.out.println(curRun);
 			
 			int index = agentIndexMap.get(mc.getAgent());
 			
@@ -268,9 +268,9 @@ public class Counter {
 			}
 				
 			if(breaked == false) {
-				RealSimuator.converged = true;
+//				RealSimuator.converged = true;
 				System.out.println("runs: " + curRun);
-				terminateRun = curRun+1;
+//				terminateRun = curRun+1;
 				mc.confirmConverge();
 			}
 		}

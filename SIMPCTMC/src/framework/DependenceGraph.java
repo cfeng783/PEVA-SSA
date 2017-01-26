@@ -25,49 +25,24 @@ public class DependenceGraph {
 		this.maxDpMatrix = new double[num][num];
 		this.directDpMatrix = new double[num][num];
 		
-		for(int i=0; i<num; i++) {
-			for(int j=0; j<num; j++) {
-				if(i == j) {
-					if(numOfInwardTrips[i] == 0) {
-						directDpMatrix[i][j] = 0;
-					}else {
-						directDpMatrix[i][j] = (numOfTrips[j][i]*1.0) / numOfInwardTrips[i];
-						if(directDpMatrix[i][j] < threshold) {
-							directDpMatrix[i][j] = 0;
-						}
-					}
-				}else {
-					if(numOfInwardTrips[i] == 0) {
-						directDpMatrix[i][j] = 0;
-					}else {
-						
-						directDpMatrix[i][j] = (numOfTrips[j][i]*1.0) / numOfInwardTrips[i];
-						
-						if(directDpMatrix[i][j] < threshold) {
-							directDpMatrix[i][j] = 0;
-						}
-					}
-					
-				}
-			}
-		}
-		
 //		for(int i=0; i<num; i++) {
 //			for(int j=0; j<num; j++) {
 //				if(i == j) {
-//					if(numOfInwardTrips[i]+numOfOutwardTrips[i] == 0) {
+//					if(numOfInwardTrips[i] == 0) {
 //						directDpMatrix[i][j] = 0;
 //					}else {
-//						directDpMatrix[i][j] = (numOfTrips[i][j]*1.0 + numOfTrips[j][i]) / (numOfInwardTrips[i]+numOfOutwardTrips[i]) * 1.0;
+//						directDpMatrix[i][j] = (numOfTrips[j][i]*1.0) / numOfInwardTrips[i];
 //						if(directDpMatrix[i][j] < threshold) {
 //							directDpMatrix[i][j] = 0;
 //						}
 //					}
 //				}else {
-//					if(numOfInwardTrips[i]+numOfOutwardTrips[i] == 0) {
+//					if(numOfInwardTrips[i] == 0) {
 //						directDpMatrix[i][j] = 0;
 //					}else {
-//						directDpMatrix[i][j] = (numOfTrips[i][j]*1.0 + numOfTrips[j][i]) / (numOfInwardTrips[i]+numOfOutwardTrips[i]) * 1.0;
+//						
+//						directDpMatrix[i][j] = (numOfTrips[j][i]*1.0) / numOfInwardTrips[i];
+//						
 //						if(directDpMatrix[i][j] < threshold) {
 //							directDpMatrix[i][j] = 0;
 //						}
@@ -76,6 +51,31 @@ public class DependenceGraph {
 //				}
 //			}
 //		}
+		
+		for(int i=0; i<num; i++) {
+			for(int j=0; j<num; j++) {
+				if(i == j) {
+					if(numOfInwardTrips[i]+numOfOutwardTrips[i] == 0) {
+						directDpMatrix[i][j] = 0;
+					}else {
+						directDpMatrix[i][j] = (numOfTrips[i][j]*1.0 + numOfTrips[j][i]) / (numOfInwardTrips[i]+numOfOutwardTrips[i]) * 1.0;
+						if(directDpMatrix[i][j] < threshold) {
+							directDpMatrix[i][j] = 0;
+						}
+					}
+				}else {
+					if(numOfInwardTrips[i]+numOfOutwardTrips[i] == 0) {
+						directDpMatrix[i][j] = 0;
+					}else {
+						directDpMatrix[i][j] = (numOfTrips[i][j]*1.0 + numOfTrips[j][i]) / (numOfInwardTrips[i]+numOfOutwardTrips[i]) * 1.0;
+						if(directDpMatrix[i][j] < threshold) {
+							directDpMatrix[i][j] = 0;
+						}
+					}
+					
+				}
+			}
+		}
 //		validateDirectDpMatrix();
 //		print(dependenceMatrix);
 //		print(directDpMatrix[1]);

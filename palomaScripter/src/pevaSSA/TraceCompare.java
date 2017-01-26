@@ -6,39 +6,41 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class TraceCompare {
-
+	final static String theta = "0.005";
+	
 	public static void main(String[] args) throws IOException  {
 		
-		int[] validSts = {0,1,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0};
 		
-		int num = 50;
-		int moment = 1;
+		int num = 10;
+		int moment = 3;
 		
-		double errorSamples[] = new double[180*num];
+		
+		
+		double errorSamples[] = new double[195*num];
 		
 		for( int stationNum = 0; stationNum < num ; stationNum++ ) {
-			String agent = "Bike(" + 0 + ")";
+			String agent = "Bike(" + stationNum + ")";
 			double[] sampleArray = getErrorRatios(agent, moment);
-			for(int i=0; i<180; i++) {
+			for(int i=0; i<195; i++) {
 				System.out.println(sampleArray[i]);
-				errorSamples[stationNum*180 + i] = sampleArray[i];
+				errorSamples[stationNum*195 + i] = sampleArray[i];
 			}
 		}
 		
-		printCI(errorSamples, validSts ,"");
+		printCI(errorSamples ,"");
 		
 	}
 	
-	static void printCI(double array[], int[] validSts, String statistics) {
+	static void printCI(double array[],  String statistics) {
 		
 		int total = 0;
 		
 		double avg = 0;
 		for(int i=0; i<array.length; i++) {
-			if(validSts[i/180] == 1) {
-				avg += array[i];
-				total += 1;
-			}
+			
+			avg += array[i];
+			total += 1;
+			
 			
 		}
 		
@@ -46,9 +48,9 @@ public class TraceCompare {
 		
 		double sigma = 0;
 		for(int i=0; i<array.length; i++) {
-			if(validSts[i/180] == 1) {
-				sigma += Math.pow(array[i]-avg, 2);
-			}
+			
+			sigma += Math.pow(array[i]-avg, 2);
+			
 		}
 		sigma = Math.sqrt(sigma*1.0/total);
 		double interval = 1.96*sigma/(Math.sqrt(total));
@@ -61,11 +63,11 @@ public class TraceCompare {
 		double trace1[] = readTrace(agent, moment, 0);
 		double trace2[] = readTrace(agent, moment, 1);
 		
-		double errorTrace[] = new double[180];
+		double errorTrace[] = new double[195];
 		
 		for(int i=0; i<trace1.length; i++) {
 //			System.out.println(trace1[i]);
-			errorTrace[i] = Math.abs(trace1[i]-trace2[i])/(trace1[i]);
+			errorTrace[i] = Math.abs(trace1[i]-trace2[i])/Math.max(trace1[i], trace2[i]);
 		}
 		return errorTrace;
 		
@@ -86,19 +88,19 @@ public class TraceCompare {
 		if(mode == 0) {
 			inputfile = "../ori-data/" + agent + suffix;
 		}else {
-			inputfile = "../data/" + agent + suffix;
+			inputfile = "../data/" +theta + "/"+ agent + suffix;
 		}
 		
-		double trace[] = new double[180];
+		double trace[] = new double[195];
 		
 		String data = null;
 		try{
 			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(inputfile)));
 			int current = 0;
 			while((data=br.readLine())!=null) {
-				if(current >= 20) {
+				if(current >= 5) {
 //					System.out.println(data);
-					trace[current-20] = Double.parseDouble(data);
+					trace[current-5] = Double.parseDouble(data);
 				}
 				current++;
 			}

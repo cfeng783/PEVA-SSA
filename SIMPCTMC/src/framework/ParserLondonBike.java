@@ -190,22 +190,22 @@ public class ParserLondonBike {
 		System.out.println("capacity: " + capacity[keyStations[0]]);
 		System.out.println("true: " + finalBike[keyStations[0]]);
 		
-		try {
-			String filename = System.getProperty("user.home")+"/Desktop/bikeNo.txt";
-			PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
-			for(int i=0; i<stList.size(); i++) {
-				Station st = stList.get(i);
-				out.println("No.: " + i +  " #station name: " + st.name + " #capacity: " +st.capacity);
-			}
-			out.println();
-			out.println();
-			
-		    
-		    out.close();
-			
-		}catch(Exception e){
-			e.printStackTrace();
-		}
+//		try {
+//			String filename = System.getProperty("user.home")+"/Desktop/bikeNo.txt";
+//			PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
+//			for(int i=0; i<stList.size(); i++) {
+//				Station st = stList.get(i);
+//				out.println("No.: " + i +  " #station name: " + st.name + " #capacity: " +st.capacity);
+//			}
+//			out.println();
+//			out.println();
+//			
+//		    
+//		    out.close();
+//			
+//		}catch(Exception e){
+//			e.printStackTrace();
+//		}
 	}
 	
 	public void parse(Model model) {
