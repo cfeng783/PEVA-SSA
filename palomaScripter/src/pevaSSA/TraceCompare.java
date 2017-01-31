@@ -6,12 +6,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class TraceCompare {
-	final static String theta = "0.005";
+	final static String theta = "0.01";
 	
 	public static void main(String[] args) throws IOException  {
 		
 		
-		int num = 10;
+		int num = 50;
 		int moment = 3;
 		
 		

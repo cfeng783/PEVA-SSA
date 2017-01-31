@@ -38,16 +38,18 @@ public class RealSimuator extends Simulator{
 	
 	static int order = 1; 
 	
-	static double theta = 0.005;
+	static double theta = 0.001;
 	
 	public static boolean converged = false;
 	
 	public static void main(String[] args) {
 		Utality.init(Cache.WRITE);
 		
-		int num = 10;
+		int num = 50;
 		
 		long costArray[] = new long[num];
+		long costArrayPrev[] = new long[num];
+		long costReduction[] = new long[num];
 		
 		int runNumArray[] = new int[num];
 		
@@ -64,7 +66,7 @@ public class RealSimuator extends Simulator{
 			System.out.println("current: " + stationNum);
 			
 			
-			long startTime = System.currentTimeMillis();
+			
 			
 			String plot = "Bike(" + stationNum + ")";
 			int keyStations[] = new int[1];
@@ -81,9 +83,17 @@ public class RealSimuator extends Simulator{
 			pvd.insertPlotVar(plot);
 
 			counter.setUp(samplingRuns, finaltime, model.getInitAgentMap(), new ArrayList<String>());
-			new RealSimuator().start(samplingRuns);			
+			new RealSimuator().start(samplingRuns);
+			
+			long startTime = System.currentTimeMillis();
+			
 			ReductionProposer rp = new ReductionProposer(model, plot);
 			rp.getOptimalProposal(theta);
+			
+			long cost = System.currentTimeMillis() - startTime;
+			costReduction[stationNum] = cost;
+			
+			startTime = System.currentTimeMillis();
 			
 			System.out.println("Trans num: " + model.getTransArray().size());
 			System.out.println("Agent num: " + model.getInitAgentMap().keySet().size());
@@ -95,8 +105,7 @@ public class RealSimuator extends Simulator{
 			counter.setUp(runs, finaltime, model.getInitAgentMap(), mc);
 			new RealSimuator().start(runs);
 			
-			long cost = System.currentTimeMillis() - startTime;
-			costArray[stationNum] = cost;
+			costArray[stationNum] = System.currentTimeMillis() - startTime;
 			
 			runNumArray[stationNum] = counter.getTerminateRun();
 			
@@ -114,22 +123,25 @@ public class RealSimuator extends Simulator{
 		System.out.println();
 		printCI(costArray, "time cost");
 		System.out.println();
-		computeCI(runNumArray, "run num");
+		printCI(costReduction, "reduction cost");
 		System.out.println();
-		computeCI(agentNumArrayPrev, "prev agent num");	
+//		computeCI(runNumArray, "run num");
+//		System.out.println();
+//		computeCI(agentNumArrayPrev, "prev agent num");	
+//		System.out.println();
+		computeCI(agentNumArray, "agent num");
 		System.out.println();
-		computeCI(agentNumArray, "current agent num");
+//		computeCI(transNumArrayPrev, "prev trans num");	
+//		System.out.println();
+		computeCI(transNumArray, "trans num");
 		System.out.println();
-		computeCI(transNumArrayPrev, "prev trans num");	
-		System.out.println();
-		computeCI(transNumArray, "current trans num");
-		System.out.println();
-		System.out.println("converge status: ");
-		System.out.print("[");
-		for(int i=0; i<convergeArray.length; i++) {
-			System.out.print(convergeArray[i] + ",");
-		}
-		System.out.print("]");
+//		System.out.println("converge status: ");
+//		System.out.print("[");
+//		for(int i=0; i<convergeArray.length; i++) {
+//			System.out.print(convergeArray[i] + ",");
+//		}
+//		System.out.print("]");
+		Utality.close();
 //			model.print2File();
 			
 //			System.out.println("Prev Trans num: " + model.getTransArray().size());

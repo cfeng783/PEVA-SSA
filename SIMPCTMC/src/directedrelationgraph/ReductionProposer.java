@@ -3,6 +3,7 @@ package directedrelationgraph;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 
 import moment.MomentGenerator;
 
@@ -117,60 +118,139 @@ public class ReductionProposer {
 			}
 		}
 		
-		HashMap<String, Trans> comsumptionTransMap = new HashMap<String, Trans>();
-		HashMap<String, Trans> productionTransMap = new HashMap<String, Trans>();
+		ArrayList<Trans> transformedTransArray = new ArrayList<Trans>();
+		HashMap<String, Trans> transformTransMap = new HashMap<String, Trans>();
+//		HashMap<String, Trans> comsumptionTransMap = new HashMap<String, Trans>();
+//		HashMap<String, Trans> productionTransMap = new HashMap<String, Trans>();
 		for(Trans trans: removableTransArray) {
-			for(int i=0; i<trans.getReactants().size(); i++) {
-				String agent = trans.getReactants().get(i).getName();
-				if(skeletalAgentMap.containsKey(agent)) {
-					if(comsumptionTransMap.containsKey(agent)) {
-						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
-						comsumptionTransMap.get(agent).addConstRate(factor);
-					}else {
-						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
-						ArrayList<RPItem> reactants = new ArrayList<RPItem>();
-						ArrayList<RPItem> products = new ArrayList<RPItem>();
-						ArrayList<RateItem> rateItems = new ArrayList<RateItem>();
-						reactants.add(new RPItem(agent,1));
-						Trans trn = new Trans(reactants, products,factor, rateItems);
-						comsumptionTransMap.put(agent, trn);
+			if(isBorderTrans(trans,skeletalAgentMap.keySet())) {
+				ArrayList<RPItem> validReactants = new ArrayList<RPItem>();
+				ArrayList<RPItem> validProducts = new ArrayList<RPItem>();
+				ArrayList<RateItem> validRateItems = new ArrayList<RateItem>();
+				for(int i=0; i<trans.getReactants().size(); i++) {
+					String agent = trans.getReactants().get(i).getName();
+					if(skeletalAgentMap.containsKey(agent)) {// this is a border transition
+						validReactants.add(trans.getReactants().get(i));
 					}
 				}
+				
+				for(int i=0; i<trans.getProducts().size(); i++) {
+					String agent = trans.getProducts().get(i).getName();
+					if(skeletalAgentMap.containsKey(agent) ) { 
+						validProducts.add(trans.getProducts().get(i));
+					}
+				}
+				
+				for(int i=0; i<trans.getRateFactors().size(); i++) {
+					String agent = trans.getRateFactors().get(i).getName();
+					if(skeletalAgentMap.containsKey(agent) ) { 
+						validRateItems.add(trans.getRateFactors().get(i));
+					}
+				}
+				
+				if(validReactants.size() != trans.getReactants().size() || validRateItems.size() != trans.getRateFactors().size()) {
+					ArrayList<RateItem> rateItems = new ArrayList<RateItem>();
+					double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
+					
+					String key = "";
+					for(int i=0; i<validReactants.size(); i++) {
+						key += validReactants.get(i).getName() + "#" + validReactants.get(i).getCount() + "$";
+					}
+					for(int i=0; i<validProducts.size(); i++) {
+						key += validProducts.get(i).getName() + "#" + validProducts.get(i).getCount() + "$";
+					}
+					if(transformTransMap.containsKey(key)) {
+						transformTransMap.get(key).addConstRate(factor);
+					}else {
+						Trans transformedTrans = new Trans(validReactants, validProducts,
+								factor, rateItems);
+						transformTransMap.put(key, transformedTrans);
+					}
+					
+					
+				}else {
+					Trans transformedTrans = new Trans(validReactants, validProducts,
+							trans.getConstRateFactor(), validRateItems);
+					transformedTransArray.add(transformedTrans);
+				}
+				
 			}
 			
-			for(int i=0; i<trans.getProducts().size(); i++) {
-				String agent = trans.getProducts().get(i).getName();
-				if(skeletalAgentMap.containsKey(agent)) {
-					if(productionTransMap.containsKey(agent)) {
-						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
-						productionTransMap.get(agent).addConstRate(factor);
-					}else {
-						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
-						ArrayList<RPItem> products = new ArrayList<RPItem>();
-						ArrayList<RPItem> reactants = new ArrayList<RPItem>();
-						ArrayList<RateItem> rateItems = new ArrayList<RateItem>();
-						products.add(new RPItem(agent,1));
-						Trans trn = new Trans(reactants, products,factor, rateItems);
-						productionTransMap.put(agent, trn);
-					}
-				}
-			}
+			
+			
+			
+//			for(int i=0; i<trans.getReactants().size(); i++) {
+//				String agent = trans.getReactants().get(i).getName();
+//				if(skeletalAgentMap.containsKey(agent)  && trans.produced(agent)!=trans.consumed(agent)) {// this is a border transition
+//					if(comsumptionTransMap.containsKey(agent)) {
+//						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
+//						comsumptionTransMap.get(agent).addConstRate(factor);
+//					}else {
+//						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
+//						ArrayList<RPItem> reactants = new ArrayList<RPItem>();
+//						ArrayList<RPItem> products = new ArrayList<RPItem>();
+//						ArrayList<RateItem> rateItems = new ArrayList<RateItem>();
+//						reactants.add(new RPItem(agent,1));
+//						Trans trn = new Trans(reactants, products,factor, rateItems);
+//						comsumptionTransMap.put(agent, trn);
+//					}
+//				}
+//			}
+//			
+//			for(int i=0; i<trans.getProducts().size(); i++) {
+//				String agent = trans.getProducts().get(i).getName();
+//				if(skeletalAgentMap.containsKey(agent) && trans.produced(agent)!=trans.consumed(agent)) { // this is a border transition
+//					if(productionTransMap.containsKey(agent)) {
+//						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
+//						productionTransMap.get(agent).addConstRate(factor);
+//					}else {
+//						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
+//						ArrayList<RPItem> products = new ArrayList<RPItem>();
+//						ArrayList<RPItem> reactants = new ArrayList<RPItem>();
+//						ArrayList<RateItem> rateItems = new ArrayList<RateItem>();
+//						products.add(new RPItem(agent,1));
+//						Trans trn = new Trans(reactants, products,factor, rateItems);
+//						productionTransMap.put(agent, trn);
+//					}
+//				}
+//			}
 			
 			
 		}
 		
-		for(String key: comsumptionTransMap.keySet()) {
-			skeletalTransArray.add(comsumptionTransMap.get(key));
+//		for(String key: comsumptionTransMap.keySet()) {
+//			skeletalTransArray.add(comsumptionTransMap.get(key));
+//		}
+//		
+		for(String key: transformTransMap.keySet()) {
+			skeletalTransArray.add(transformTransMap.get(key));
 		}
 		
-		for(String key: productionTransMap.keySet()) {
-			skeletalTransArray.add(productionTransMap.get(key));
+		for(Trans trans: transformedTransArray) {
+			skeletalTransArray.add(trans);
 		}
 		
 //		ArrayList<Double> trace = solveOdeModel(skeletalAgentMap, skeletalTransArray);
 //		double error = calMaxError(yOrigin, trace);
 //		System.out.println("theta: " + theta + " error: " + error);
 		return new Proposal(0, skeletalTransArray, skeletalAgentMap);
+	}
+	
+	private boolean isBorderTrans(Trans trans, Set<String> skeletalSet) {
+		for(int i=0; i<trans.getReactants().size(); i++) {
+			String agent = trans.getReactants().get(i).getName();
+			if(skeletalSet.contains(agent) && trans.produced(agent) != trans.consumed(agent)) {
+				return true;
+			}
+		}
+		
+		for(int i=0; i<trans.getProducts().size(); i++) {
+			String agent = trans.getProducts().get(i).getName();
+			if(skeletalSet.contains(agent) && trans.produced(agent) != trans.consumed(agent)) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	

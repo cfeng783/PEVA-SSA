@@ -1,149 +1,54 @@
-With sampling theta=0.005
-time cost avg: 91374.1
-time cost interval: 14563.252086767377
-
-run num avg: 10000.0
-run num interval: 0.0
-
-prev agent num avg: 730.0
-prev agent num interval: 119.99714836611741
-
-current agent num avg: 64.0
-current agent num interval: 6.873985743366071
-
-prev trans num avg: 1374.1
-prev trans num interval: 234.85387882340797
-
-current trans num avg: 141.0
-current trans num interval: 14.030095651847851
-
-converge status: 
-[0,1,1,0,1,1,1,1,1,1,]
-
-
 With sampling theta=0.01
+time cost avg: 37265.18
+time cost interval: 3040.7904689481124
 
-time cost avg: 55718.1
-time cost interval: 6643.057191751279
+reduction cost avg: 16377.12
+reduction cost interval: 6714.681911464651
 
-run num avg: 10000.0
-run num interval: 0.0
+agent num avg: 34.0
+agent num interval: 2.4723984144955278
 
-prev agent num avg: 730.0
-prev agent num interval: 119.99714836611741
-
-current agent num avg: 35.0
-current agent num interval: 2.7158556662679993
-
-prev trans num avg: 1374.1
-prev trans num interval: 234.85387882340797
-
-current trans num avg: 74.5
-current trans num interval: 5.6347869524942995
-
-converge status: 
-[0,1,1,0,1,1,1,1,1,1,]
+trans num avg: 193.48
+trans num interval: 16.84754161731616
 
 
-With sampling theta=0.015
+With sampling theta=0.001
 
-With sampling theta=0.02
+With sampling theta=0.002
 
-With sampling theta=0.025
+With sampling theta=0.003
 
-With sampling theta=0.03
+With sampling theta=0.004
 
-With sampling theta=0.035
+With sampling theta=0.005
 
-With sampling theta=0.04
+With sampling theta=0.006
 
-With sampling theta=0.045
+With sampling theta=0.007
 
-With sampling theta=0.05
+With sampling theta=0.008
 
-time cost avg: 23760.2
-time cost interval: 6464.9067355124
+With sampling theta=0.009
 
-run num avg: 10000.0
-run num interval: 0.0
-
-prev agent num avg: 730.0
-prev agent num interval: 119.99714836611741
-
-current agent num avg: 3.3
-current agent num interval: 1.0013279183164725
-
-prev trans num avg: 1374.1
-prev trans num interval: 234.85387882340797
-
-current trans num avg: 8.4
-current trans num interval: 1.8006416634077973
-
-converge status: 
-[0,1,1,0,1,1,1,1,1,1,]
-
-
-
-With sampling theta=0.055
-
-With sampling theta=0.06
-
-With sampling theta=0.065
-
-With sampling theta=0.07
-
-With sampling theta=0.075
-
-With sampling theta=0.08
-
-With sampling theta=0.085
-
-With sampling theta=0.09
-
-With sampling theta=0.095
-
-With sampling theta=0.1
-
-time cost avg: 22670.0
-time cost interval: 6502.732836897422
-
-run num avg: 10000.0
-run num interval: 0.0
-
-prev agent num avg: 730.0
-prev agent num interval: 119.99714836611741
-
-current agent num avg: 2.3
-current agent num interval: 0.284030984225313
-
-prev trans num avg: 1374.1
-prev trans num interval: 234.85387882340797
-
-current trans num avg: 6.2
-current trans num interval: 0.5403347110819365
-
-converge status: 
-[0,1,1,0,1,1,0,1,1,1,]
 
 Without sampling
-time cost avg: 1356428.2
-time cost interval: 306048.13252375537
+time cost avg: 1885803.68
+time cost interval: 265847.32964966417
 
 run num avg: 10000.0
 run num interval: 0.0
 
-prev agent num avg: 730.0
-prev agent num interval: 119.99714836611741
+prev agent num avg: 913.58
+prev agent num interval: 91.76119823517561
 
-current agent num avg: 730.0
-current agent num interval: 119.99714836611741
+current agent num avg: 913.58
+current agent num interval: 91.76119823517561
 
-prev trans num avg: 1374.1
-prev trans num interval: 234.85387882340797
+prev trans num avg: 1733.02
+prev trans num interval: 179.32903214724382
 
-current trans num avg: 1374.1
-current trans num interval: 234.85387882340797
+current trans num avg: 1733.02
+current trans num interval: 179.32903214724382
 
 converge status: 
-[0,1,1,0,1,1,0,1,1,1,]
-
+[0,1,1,0,1,1,0,1,1,1,1,1,0,0,1,0,1,1,0,0,0,1,0,1,0,1,1,0,0,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,1,1,0,0,]

@@ -246,35 +246,35 @@ public class Counter {
 			}
 			
 		}
-		boolean breaked = false;
-		if(curRun > 100 && curRun%100==0) {
-			
-//			System.out.println(curRun);
-			
-			int index = agentIndexMap.get(mc.getAgent());
-			
-			for(int j=20; j<statistics_mean.get(index).size(); j++) {
-				double mean = statistics_mean.get(index).get(j);
-				double std = statistics_variance.get(index).get(j) / (curRun+1)-Math.pow(mean, 2);
-				std = Math.sqrt(std);
-				double se = std / Math.sqrt(curRun+1);
-				double ci = 1.96*se;
-				double percentage = ci / mean;
-				if(percentage == percentage && percentage > 0.01) {
-//					System.out.println(percentage);
-					breaked = true;
-					break;
-				}
-			}
-				
-			if(breaked == false) {
-//				RealSimuator.converged = true;
-				System.out.println("runs: " + curRun);
-//				terminateRun = curRun+1;
-				mc.confirmConverge();
-			}
-		}
-		
+//		boolean breaked = false;
+//		if(curRun > 100 && curRun%100==0) {
+//			
+////			System.out.println(curRun);
+//			
+//			int index = agentIndexMap.get(mc.getAgent());
+//			
+//			for(int j=20; j<statistics_mean.get(index).size(); j++) {
+//				double mean = statistics_mean.get(index).get(j);
+//				double std = statistics_variance.get(index).get(j) / (curRun+1)-Math.pow(mean, 2);
+//				std = Math.sqrt(std);
+//				double se = std / Math.sqrt(curRun+1);
+//				double ci = 1.96*se;
+//				double percentage = ci / mean;
+//				if(percentage == percentage && percentage > 0.01) {
+////					System.out.println(percentage);
+//					breaked = true;
+//					break;
+//				}
+//			}
+//				
+//			if(breaked == false) {
+////				RealSimuator.converged = true;
+//				System.out.println("runs: " + curRun);
+////				terminateRun = curRun+1;
+//				mc.confirmConverge();
+//			}
+//		}
+//		
 //		if(curRun > 100 && curRun%10==0) {
 //			for(int i=0; i<extraMeanVars.size(); i++) {
 //				for(int j=20; j<statistics_extra.get(extraMeanVarIndexMap.get(extraMeanVars.get(i))).size(); j++) {
