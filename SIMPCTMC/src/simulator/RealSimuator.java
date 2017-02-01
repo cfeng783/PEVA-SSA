@@ -38,7 +38,7 @@ public class RealSimuator extends Simulator{
 	
 	static int order = 1; 
 	
-	static double theta = 0.001;
+	static double theta = 0.1;
 	
 	public static boolean converged = false;
 	
