@@ -1,5 +1,8 @@
 package directedrelationgraph;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -67,7 +70,7 @@ public class DRG {
 				
 				if(node1.getType() == DRGNode.TNS && node2.getType() == DRGNode.POP) {
 					Trans trans = transMap.get(node1.getName());
-					if(trans.isInvolved(node2.getName())) {
+					if(trans.isContributor(node2.getName())) {
 						dist[i][j] = 1;
 					}else {
 						dist[i][j] = 0;
@@ -107,6 +110,9 @@ public class DRG {
 			}
 			Arrays.sort(sortArray);
 			
+			//print coupling coefficients
+			print2File(sortArray);
+			
 			for(int i=0; i<sortArray.length; i++) {
 				if(sortArray[i].getValue() > threshold) {
 					skeletalSet.add(sortArray[i].getName());
@@ -118,6 +124,20 @@ public class DRG {
 		
 		return skeletalSet;
 		
+	}
+	
+	public void print2File(SortNode[] sortArray) {
+//		System.out.println("print to file");
+		try {
+			PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(System.getProperty("user.home")+"/Desktop/before.txt", false)));
+			for (int i=0; i<sortArray.length; i++) {
+				out.println(sortArray[i].getValue());
+			}
+		    out.close();
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 	
 }

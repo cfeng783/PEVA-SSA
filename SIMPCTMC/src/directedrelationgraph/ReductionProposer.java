@@ -24,12 +24,12 @@ public class ReductionProposer {
 	private final double convergence = 0.005; 
 	private final double sigma = 0.00000001; 
 	
-	private String target;
+	private ArrayList<String> target;
 	
 	private Model model;
 	private DRG drg;
 	
-	public ReductionProposer(Model model, String target) {
+	public ReductionProposer(Model model, ArrayList<String> target) {
 		this.model = model;
 		this.target = target;
 		this.drg = new DRG(model.getInitAgentMap(), model.getTransArray());
@@ -82,7 +82,10 @@ public class ReductionProposer {
 	
 	private Proposal getProposal(double theta, ArrayList<Double> yOrigin) {
 		HashSet<String> targetSet = new HashSet<String>();
-		targetSet.add(target);
+		for(String targetpop: target) {
+			targetSet.add(targetpop);
+		}
+		
 		HashSet<String> skeletalSet = drg.makeSkeletalMechanism(targetSet, theta);
 		if(skeletalSet == null) {
 			return null;
@@ -103,8 +106,11 @@ public class ReductionProposer {
 					skeletalSet.add(trans.getRateFactors().get(i).getName());
 				}
 				
-				for(int i=0; i<trans.getProducts().size(); i++) {
-					skeletalSet.add(trans.getProducts().get(i).getName());
+//				for(int i=0; i<trans.getProducts().size(); i++) {
+//					skeletalSet.add(trans.getProducts().get(i).getName());
+//				}
+				for(String targetpop: target) {
+					skeletalSet.add(targetpop);
 				}
 				
 			}else {
@@ -176,47 +182,10 @@ public class ReductionProposer {
 				
 			}
 			
-			
-			
-			
-//			for(int i=0; i<trans.getReactants().size(); i++) {
-//				String agent = trans.getReactants().get(i).getName();
-//				if(skeletalAgentMap.containsKey(agent)  && trans.produced(agent)!=trans.consumed(agent)) {// this is a border transition
-//					if(comsumptionTransMap.containsKey(agent)) {
-//						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
-//						comsumptionTransMap.get(agent).addConstRate(factor);
-//					}else {
-//						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
-//						ArrayList<RPItem> reactants = new ArrayList<RPItem>();
-//						ArrayList<RPItem> products = new ArrayList<RPItem>();
-//						ArrayList<RateItem> rateItems = new ArrayList<RateItem>();
-//						reactants.add(new RPItem(agent,1));
-//						Trans trn = new Trans(reactants, products,factor, rateItems);
-//						comsumptionTransMap.put(agent, trn);
-//					}
-//				}
-//			}
-//			
-//			for(int i=0; i<trans.getProducts().size(); i++) {
-//				String agent = trans.getProducts().get(i).getName();
-//				if(skeletalAgentMap.containsKey(agent) && trans.produced(agent)!=trans.consumed(agent)) { // this is a border transition
-//					if(productionTransMap.containsKey(agent)) {
-//						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
-//						productionTransMap.get(agent).addConstRate(factor);
-//					}else {
-//						double factor = trans.getFireCount()*1.0/RealSimuator.finaltime/RealSimuator.samplingRuns;
-//						ArrayList<RPItem> products = new ArrayList<RPItem>();
-//						ArrayList<RPItem> reactants = new ArrayList<RPItem>();
-//						ArrayList<RateItem> rateItems = new ArrayList<RateItem>();
-//						products.add(new RPItem(agent,1));
-//						Trans trn = new Trans(reactants, products,factor, rateItems);
-//						productionTransMap.put(agent, trn);
-//					}
-//				}
-//			}
-			
-			
 		}
+		
+		
+		
 		
 //		for(String key: comsumptionTransMap.keySet()) {
 //			skeletalTransArray.add(comsumptionTransMap.get(key));
@@ -228,6 +197,57 @@ public class ReductionProposer {
 		
 		for(Trans trans: transformedTransArray) {
 			skeletalTransArray.add(trans);
+		}
+		
+		
+		HashMap<String, Trans> aggTransMap = new HashMap<String, Trans>();
+		ArrayList<Trans> invalidTrans = new ArrayList<Trans>();
+		for(Trans trans: skeletalTransArray) {
+			
+			ArrayList<RPItem> invalidProducts = new ArrayList<RPItem>();
+			
+			
+			for(int i=0; i<trans.getProducts().size(); i++) {
+				String agent = trans.getProducts().get(i).getName();
+				if(!skeletalAgentMap.containsKey(agent) ) { 
+					invalidProducts.add(trans.getProducts().get(i));
+				}
+			}
+			
+			
+			
+			
+			for(RPItem item: invalidProducts) {
+				trans.getProducts().remove(item);
+			}
+			
+			
+			if(trans.getRateFactors().size() == 0) {
+				String key = "";
+				for(int i=0; i<trans.getReactants().size(); i++) {
+					key += trans.getReactants().get(i).getName() + "#" + trans.getReactants().get(i).getCount() + "$";
+				}
+				for(int i=0; i<trans.getProducts().size(); i++) {
+					key += trans.getProducts().get(i).getName() + "#" + trans.getProducts().get(i).getCount() + "$";
+				}
+				if(aggTransMap.containsKey(key)) {
+					aggTransMap.get(key).addConstRate(trans.getConstRateFactor()[0]);
+				}else {
+					aggTransMap.put(key, trans);
+				}
+				invalidTrans.add(trans);
+				
+			}
+			
+			
+		}
+		
+		for(Trans trans: invalidTrans) {
+			skeletalTransArray.remove(trans);
+		}
+		
+		for(String key: aggTransMap.keySet()) {
+			skeletalTransArray.add(aggTransMap.get(key));
 		}
 		
 //		ArrayList<Double> trace = solveOdeModel(skeletalAgentMap, skeletalTransArray);
@@ -255,39 +275,39 @@ public class ReductionProposer {
 	
 	
 	
-	private ArrayList<Double> solveOdeModel(HashMap<String, Integer> skeletalAgentMap, ArrayList<Trans> skeletalTransArray) {
-		MomentGenerator mg = new MomentGenerator(skeletalAgentMap, skeletalTransArray);
-		mg.setupIndex(1);
-		
-		FirstOrderIntegrator dp853 = new DormandPrince853Integrator(1.0e-6, 10.0, 1.0e-3, 1.0e-3);
-		
-		final int targetIndex = mg.getIndex(target);
-		final ArrayList<Double> ret = new ArrayList<Double>();
-		FixedStepHandler stepHandler = new FixedStepHandler() {
-		    public void init(double t0, double[] y0, double t) {
-		    }
-			@Override
-			public void handleStep(double t,
-		              double[] y,
-		              double[] yDot,
-		              boolean isLast) {
+//	private ArrayList<Double> solveOdeModel(HashMap<String, Integer> skeletalAgentMap, ArrayList<Trans> skeletalTransArray) {
+//		MomentGenerator mg = new MomentGenerator(skeletalAgentMap, skeletalTransArray);
+//		mg.setupIndex(2);
+//		
+//		FirstOrderIntegrator dp853 = new DormandPrince853Integrator(1.0e-6, 10.0, 1.0e-3, 1.0e-3);
+//		
+//		final int targetIndex = mg.getIndex(target);
+//		final ArrayList<Double> ret = new ArrayList<Double>();
+//		FixedStepHandler stepHandler = new FixedStepHandler() {
+//		    public void init(double t0, double[] y0, double t) {
+//		    }
+//			@Override
+//			public void handleStep(double t,
+//		              double[] y,
+//		              double[] yDot,
+//		              boolean isLast) {
 //				System.out.println(t+": " + y[targetIndex]);
-				ret.add(y[targetIndex]);
-//				if(isLast) {
-//					System.out.println(t+": " + y[targetIndex]);
-//				}
-			}
-		};
-		StepNormalizer stepNorm = new StepNormalizer(RealSimuator.finaltime/50, stepHandler);
-		dp853.addStepHandler(stepNorm);
-		
-		FirstOrderDifferentialEquations ode = mg.getDiffEquations(model.getAlterPoints());
-		double[] y = mg.getInitValues(); // initial state
-
-		dp853.integrate(ode, 0.0, y, RealSimuator.finaltime, y); // now y contains final state at time t=16.0
-		
-		return ret;
-	}
+//				ret.add(y[targetIndex]);
+////				if(isLast) {
+////					System.out.println(t+": " + y[targetIndex]);
+////				}
+//			}
+//		};
+//		StepNormalizer stepNorm = new StepNormalizer(RealSimuator.finaltime/50, stepHandler);
+//		dp853.addStepHandler(stepNorm);
+//		
+//		FirstOrderDifferentialEquations ode = mg.getDiffEquations(model.getAlterPoints());
+//		double[] y = mg.getInitValues(); // initial state
+//
+//		dp853.integrate(ode, 0.0, y, RealSimuator.finaltime, y); // now y contains final state at time t=16.0
+//		
+//		return ret;
+//	}
 	
 	static double calMaxError(ArrayList<Double> data1, ArrayList<Double> data2) {
 		double ret[] = new double[data1.size()];
@@ -302,7 +322,8 @@ public class ReductionProposer {
 		}
 		
 		double mean = getMean(ret, ret.length);
-//		double CI = getCI(ret, mean, ret.length);
+		double CI = getCI(ret, mean, ret.length);
+		System.out.println(mean + "+-" + CI);
 		return mean;
 	}
 	
@@ -322,7 +343,7 @@ public class ReductionProposer {
 		}
 		sigma = Math.sqrt((sigma*1.0)/size);
 		
-		double interval = 1.64*sigma/Math.sqrt(size);
+		double interval = 1.96*sigma/Math.sqrt(size);
 		return interval;
 	}
 	

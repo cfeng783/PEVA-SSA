@@ -50,8 +50,14 @@ public class Trans {
 			double[] constRateFactor, ArrayList<RateItem> rateFactors) {
 		this.id = UUID.randomUUID().toString();
 		this.reactants = reactants;
-		this.products = products; 
-		this.constRateFactor = constRateFactor;
+		this.products = products;
+		
+		double average = 0;
+		for(int i=0; i<constRateFactor.length; i++) {
+			average += constRateFactor[i];
+		}
+		this.constRateFactor = new double[1]; 
+		this.constRateFactor[0] = average/constRateFactor.length;
 		this.rateFactors = rateFactors;
 		setMissFactors();
 	}

@@ -190,6 +190,14 @@ public class ParserLondonBike {
 		System.out.println("capacity: " + capacity[keyStations[0]]);
 		System.out.println("true: " + finalBike[keyStations[0]]);
 		
+		for(Integer i: importantSet) {
+			
+			if(i != keyStations[0]) {
+				RealSimuator.other	= i;
+				break;
+			}
+				
+		}
 //		try {
 //			String filename = System.getProperty("user.home")+"/Desktop/bikeNo.txt";
 //			PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
@@ -244,7 +252,7 @@ public class ParserLondonBike {
 		System.out.println("agent count: " + agentMap.keySet().size());
 		
 		model.init(transArray, agentMap);
-		model.setAlterPoints(alterPoints);
+//		model.setAlterPoints(alterPoints);
 		RealSimuator.finaltime = this.simulationLength;
 //		for(Trans trans: transArray) {
 //			System.out.println(trans.toString());

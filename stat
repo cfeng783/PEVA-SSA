@@ -3,106 +3,49 @@
 
 With sampling theta=0.001
 
-time cost avg: 335735.56
-time cost interval: 44964.96019411836
 
-reduction cost avg: 16372.42
-reduction cost interval: 6736.937395122205
-
-agent num avg: 137.2
-agent num interval: 6.890731165848804
-
-trans num avg: 894.58
-trans num interval: 83.27687506213955
+With sampling theta=0.0025
 
 
-With sampling theta=0.002
-
-time cost avg: 243742.78
-time cost interval: 25462.28587084178
-
-reduction cost avg: 16797.16
-reduction cost interval: 6910.172911533868
-
-agent num avg: 117.44
-agent num interval: 5.268328331150214
-
-trans num avg: 755.78
-trans num interval: 55.856913155411654
-
-With sampling theta=0.003
-
-time cost avg: 178510.76
-time cost interval: 17108.142151091542
-
-reduction cost avg: 16209.06
-reduction cost interval: 6602.10241421476
-
-agent num avg: 97.04
-agent num interval: 4.433227116762686
-
-trans num avg: 598.46
-trans num interval: 39.771571615273146
-
-With sampling theta=0.004
 
 With sampling theta=0.005
 
-time cost avg: 99749.88
-time cost interval: 7842.944056097355
 
-reduction cost avg: 16517.56
-reduction cost interval: 6754.676874689645
 
-agent num avg: 68.28
-agent num interval: 3.236334527084615
+With sampling theta=0.0075
 
-trans num avg: 399.52
-trans num interval: 25.013485290682706
 
 
 With sampling theta=0.01
-time cost avg: 37265.18
-time cost interval: 3040.7904689481124
 
-reduction cost avg: 16377.12
-reduction cost interval: 6714.681911464651
 
-agent num avg: 34.0
-agent num interval: 2.4723984144955278
 
-trans num avg: 193.48
-trans num interval: 16.84754161731616
-
+With sampling theta=0.025
 
 
 With sampling theta=0.05
 
-time cost avg: 2316.9
-time cost interval: 409.51718336870783
 
-reduction cost avg: 17134.62
-reduction cost interval: 6832.863743520946
 
-agent num avg: 3.24
-agent num interval: 0.3863139614355141
 
-trans num avg: 35.4
-trans num interval: 3.759931914277172
+With sampling theta=0.075
+
+
 
 With sampling theta=0.1
 
-time cost avg: 1185.16
-time cost interval: 236.1001216809106
+time cost avg: 18.18
+time cost interval: 2.7505386096544804
 
-reduction cost avg: 17587.18
-reduction cost interval: 7186.798953290262
+reduction cost avg: 16625.22
+reduction cost interval: 6842.353355712431
 
-agent num avg: 2.24
-agent num interval: 0.18848638359308617
+agent num avg: 3.84
+agent num interval: 0.2791744630155128
 
-trans num avg: 33.04
-trans num interval: 3.705575813392569
+trans num avg: 4.06
+trans num interval: 0.4236865407350108
+
 
 
 

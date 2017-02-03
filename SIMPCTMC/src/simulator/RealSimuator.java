@@ -30,15 +30,17 @@ import utality.Utality;
 public class RealSimuator extends Simulator{
 	static Model model = new Model();
 	public static int finaltime=60*1;
-	public static int runs=10000;
-	public static int samplingRuns = 100;
+	public static int runs=10;
+	public static int samplingRuns = 10;
 	static Counter counter = new Counter();
 	static GraphBuilder gb = new GraphBuilder();
 	static PlotVarDefiner pvd = new PlotVarDefiner();
 	
 	static int order = 1; 
 	
-	static double theta = 0.1;
+	static double theta = 0.0025;
+	
+	public static int other = 0;
 	
 	public static boolean converged = false;
 	
@@ -77,21 +79,27 @@ public class RealSimuator extends Simulator{
 			ParserLondonBike parser = new ParserLondonBike(keyStations);
 			parser.parse(model);
 			
+			
+			
 			agentNumArrayPrev[stationNum] = model.getInitAgentMap().keySet().size();
 			transNumArrayPrev[stationNum] = model.getTransArray().size();
 			
 			pvd.insertPlotVar(plot);
+			String plot2 = "Slot(" + other + ")";
+			pvd.insertPlotVar(plot2);
 
 			counter.setUp(samplingRuns, finaltime, model.getInitAgentMap(), new ArrayList<String>());
 			new RealSimuator().start(samplingRuns);
 			
 			long startTime = System.currentTimeMillis();
 			
-			ReductionProposer rp = new ReductionProposer(model, plot);
+			ReductionProposer rp = new ReductionProposer(model, pvd.getPlotVars());
 			rp.getOptimalProposal(theta);
 			
 			long cost = System.currentTimeMillis() - startTime;
 			costReduction[stationNum] = cost;
+			
+			model.print2File();
 			
 			startTime = System.currentTimeMillis();
 			
@@ -235,11 +243,11 @@ public class RealSimuator extends Simulator{
 //    	p.plot(pvd.getPlots());
 //    	p.plotVariance(pvd.getPlots());
     	
-        if(runs > 200) {
-        	p.export(pvd.getPlots(), "../data/"+ theta + "/");
-        	p.exportVariance(pvd.getPlots(), "../data/"+ theta + "/");
-        	p.exportSkewness(pvd.getPlots(), "../data/"+ theta + "/");
-        }
+//        if(runs > 200) {
+//        	p.export(pvd.getPlots(), "../data/"+ theta + "/");
+//        	p.exportVariance(pvd.getPlots(), "../data/"+ theta + "/");
+//        	p.exportSkewness(pvd.getPlots(), "../data/"+ theta + "/");
+//        }
     	
     	
     	
