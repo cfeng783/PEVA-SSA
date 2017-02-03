@@ -38,7 +38,7 @@ public class RealSimuator extends Simulator{
 	
 	static int order = 1; 
 	
-	static double theta = 0.0025;
+	static double theta = 0.05;
 	
 	public static int other = 0;
 	

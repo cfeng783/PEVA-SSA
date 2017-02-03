@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class TraceCompare {
-	static String theta = "0.1";
+	static String theta = "0.001";
 	
 	public static void main(String[] args) throws IOException  {
 		
@@ -19,9 +19,9 @@ public class TraceCompare {
 			
 			for( int stationNum = 0; stationNum < num ; stationNum++ ) {
 				String agent = "Bike(" + stationNum + ")";
-//				double[] sampleArray = getErrorRatios(agent, moment);//mean error
+				double[] sampleArray = getErrorRatios(agent, moment);//mean error
 //				double[] sampleArray = getVarianceError(agent);//variance error
-				double[] sampleArray = getStatisticalError(agent);//variance error
+//				double[] sampleArray = getStatisticalError(agent);//variance error
 //				double[] sampleArray = getBhahError(agent,totalR[stationNum]);
 				for(int i=0; i<195; i++) {
 //					System.out.println(sampleArray[i]);
@@ -165,6 +165,10 @@ public class TraceCompare {
 				if(current >= 5) {
 //					System.out.println(data);
 					trace[current-5] = Double.parseDouble(data);
+					
+					if(mode == 0) {
+						trace[current-5] = trace[current-5]*1.01;
+					}
 				}
 				current++;
 			}

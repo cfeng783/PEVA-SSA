@@ -2,35 +2,127 @@
 
 
 With sampling theta=0.001
+time cost avg: 68.42
+time cost interval: 8.940537797873233
+
+reduction cost avg: 18318.86
+reduction cost interval: 7474.270151276602
+
+agent num avg: 61.02
+agent num interval: 6.23082489460264
+
+trans num avg: 85.3
+trans num interval: 8.919916717099996
 
 
 With sampling theta=0.0025
+
+time cost avg: 59.44
+time cost interval: 8.896614234909817
+
+reduction cost avg: 17312.38
+reduction cost interval: 6749.6355068595885
+
+agent num avg: 50.64
+agent num interval: 5.133482094329345
+
+trans num avg: 73.72
+trans num interval: 7.7095627717270
 
 
 
 With sampling theta=0.005
 
+time cost avg: 39.64
+time cost interval: 4.99173483398307
+
+reduction cost avg: 15999.2
+reduction cost interval: 6408.096989231347
+
+agent num avg: 36.12
+agent num interval: 3.6266419756022237
+
+trans num avg: 55.18
+trans num interval: 5.763783833836935
+
 
 
 With sampling theta=0.0075
+
+time cost avg: 29.62
+time cost interval: 3.6980748963751386
+
+reduction cost avg: 16923.36
+reduction cost interval: 6653.721363777862
+
+agent num avg: 27.12
+agent num interval: 2.8352414534215593
+
+trans num avg: 41.88
+trans num interval: 4.548429902636732
 
 
 
 With sampling theta=0.01
 
+time cost avg: 24.16
+time cost interval: 4.7870118091352145
+
+reduction cost avg: 16745.68
+reduction cost interval: 6735.128802761967
+
+agent num avg: 22.0
+agent num interval: 2.270894942528165
+
+trans num avg: 34.1
+trans num interval: 3.7023772255133585
+
 
 
 With sampling theta=0.025
 
+time cost avg: 8.96
+time cost interval: 1.1654470510495103
+
+reduction cost avg: 16870.02
+reduction cost interval: 6802.517458163852
+
+agent num avg: 10.02
+agent num interval: 1.004759546956385
+
+trans num avg: 14.9
+trans num interval: 1.68992468471231
+
 
 With sampling theta=0.05
 
+time cost avg: 3.88
+time cost interval: 0.6114194789177065
+
+reduction cost avg: 17013.7
+reduction cost interval: 6889.44888735656
+
+agent num avg: 5.74
+agent num interval: 0.5702488551501
+
+trans num avg: 7.42
+trans num interval: 0.9746384535816345
 
 
 
 With sampling theta=0.075
 
+time cost avg: 2.68
+time cost interval: 0.5033499808284491
 
+reduction cost avg: 18264.4
+reduction cost interval: 7205.036490993315
+
+agent num avg: 4.42
+agent num interval: 0.33762102304210856
+
+trans num avg: 5.04
+trans num interval: 0.5839615987374512
 
 With sampling theta=0.1
 
